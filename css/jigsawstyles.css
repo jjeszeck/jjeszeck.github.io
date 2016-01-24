@@ -4,6 +4,7 @@ p {font-family:arial,sans-serif; font-size:10px; font-weight:normal; line-height
 
 #buttonPanel {position:absolute; left:50%; top:50px; margin-left:-430px; width:860px; height:144px; background-color:#e5e980}
 #buttonPanel a {margin-left: -4px}
+#buttonPanel a:first-child {margin-left: 0}
 
 #homePanel {position:absolute; left:50%; top:194px; margin-left:-430px; width:860px; height:410px; background-color:#c85d31}
 #contentPanel {position:absolute; left:50%; top:194px; margin-left:-430px; width:860px; height:410px; background-color:#fbf8ce}
