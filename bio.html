@@ -1,85 +1,85 @@
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Jigsaw Design, Seattle | Bio</title>
-  <!--Must save file as utf-8, which is a flavor of Unicode that is compatible with ASCII. This must be the first meta tag for it to be recognized by some browsers.-->
-  <meta http-equiv="imagetoolbar" content="no">
-  <link rel="stylesheet" type="text/css" href="./css/jigsawstyles.css" media="all">
-  <title>bio</title>
-  <style type="text/css">
-  </style>
-  <script language="javascript" type="text/javascript">
-  <!--
-  //BEGIN SCRIPT
-  //--------------------------------------------------------
-  var pageName = "bio";
-  var layouts = new Array();
-  layouts[0]=
-  {
-  name:"jane",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"167px", heightIllo1:"250px", srcIllo1:"./images/jane3.jpg"
-  }
-  var layoutsLoaded = "true";
-  //--------------------------------------------------------
-  //END SCRIPT
-  //-->
-  </script>
-  <script language="javascript" type="text/javascript" src="./js/jigsawjavascript.js"></script>
-</head>
-<body onload="loadImage();">
-  <div id="buttonPanel">
-    <a href="./index.html"><img name="home" width="128" height="124" border="0" onmouseover="changeButton(&#39;home&#39;,1)" onmousedown="changeButton(&#39;home&#39;,2)" onmouseout="setButtons()" src="./images/button/home0.jpg"></a>
-    <a href="./books.html"><img name="books" width="101" height="124" border="0" onmouseover="changeButton(&#39;books&#39;,1)" onmousedown="changeButton(&#39;books&#39;,2)" onmouseout="setButtons()" src="./images/button/books0.jpg"></a>
-    <a href="./misc.html"><img name="misc" width="103" height="124" border="0" onmouseover="changeButton(&#39;misc&#39;,1)" onmousedown="changeButton(&#39;misc&#39;,2)" onmouseout="setButtons()" src="./images/button/misc0.jpg"></a>
-    <a href="./logos.html"><img name="logos" width="105" height="124" border="0" onmouseover="changeButton(&#39;logos&#39;,1)" onmousedown="changeButton(&#39;logos&#39;,2)" onmouseout="setButtons()" src="./images/button/logos0.jpg"></a>
-    <a href="./web.html"><img name="web" width="99" height="124" border="0" onmouseover="changeButton(&#39;web&#39;,1)" onmousedown="changeButton(&#39;web&#39;,2)" onmouseout="setButtons()" src="./images/button/web0.jpg"></a>
-    <a href="./clients.html"><img name="clients" width="104" height="124" border="0" onmouseover="changeButton(&#39;clients&#39;,1)" onmousedown="changeButton(&#39;clients&#39;,2)" onmouseout="setButtons()" src="./images/button/clients0.jpg"></a>
-    <a href="./bio.html"><img name="bio" width="104" height="124" border="0" onmouseover="changeButton(&#39;bio&#39;,1)" onmousedown="changeButton(&#39;bio&#39;,2)" onmouseout="setButtons()" src="./images/button/bio2.jpg"></a>
-    <a href="./contact.html"><img name="contact" width="100" height="124" border="0" onmouseover="changeButton(&#39;contact&#39;,1)" onmousedown="changeButton(&#39;contact&#39;,2)" onmouseout="setButtons()" src="./images/button/contact0.jpg"></a>
-  </div>
-  <div id="contentPanel">
-    <div id="blackPanel">
-      <img src="./images/button/bio.jpg" id="contentButton">
-      <div id="cycleButtons" style="display: none;">
-        <p>
-        <a href="javascript:void (0)" onmousedown="cycleIllos(&#39;back&#39;)" onmouseup="this.blur()">previous</a> •
-        <a href="javascript:void (0)" onmousedown="cycleIllos(&#39;forward&#39;)" onmouseup="this.blur()">next</a></p>
-      </div>
-    </div>
-    <img src="./images/jane3.jpg" id="illo1" onclick="displayImage(this.src)" style="position: absolute; left: 280px; top: 60px; width: 167px; height: 250px; border-width: 0px; z-index: 2; display: block;">
-    <img src="./images/yellow.jpg" id="illo2" onclick="displayImage(this.src)" style="position:absolute; left:475px; top:60px; width:10px; height:10px; border-width:0px; z-index:1; display:none">
-    <img src="./images/yellow.jpg" id="illo3" onclick="displayImage(this.src)" style="position:absolute; left:550px; top:60px; width:10px; height:10px; border-width:0px; z-index:2; display:none">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Jigsaw Design, Seattle | Bio</title>
+    <link rel="stylesheet" type="text/css" href="./css/jigsawstyles.css" media="all">
+    <title>bio</title>
     <script language="javascript" type="text/javascript">
     <!--
     //BEGIN SCRIPT
     //--------------------------------------------------------
-    if(pageName == "clients")
+    var pageName = "bio";
+    var layouts = new Array();
+    layouts[0]=
     {
-    document.getElementById("contentPanel").style.backgroundColor = "#000000";
-    document.getElementById("cycleButtons").style.display = "none";
+    name:"jane",
+    leftIllo1:"280px",
+    topIllo1:"60px",
+    widthIllo1:"167px", heightIllo1:"250px", srcIllo1:"./images/jane3.jpg"
     }
-    if(pageName == "bio" || pageName == "contact")
-    {
-    document.getElementById("cycleButtons").style.display = "none";
-    }
+    var layoutsLoaded = "true";
     //--------------------------------------------------------
     //END SCRIPT
     //-->
     </script>
-    <!-- --------------------------------------------------------- -->
-    <div class="bioText" style="position:absolute; left:480px; top:60px; margin-top:-.4em; width:200px; z-index:3">
-      <p>I’m Jane Jeszeck, and I operate Jigsaw,
-      a design studio in Seattle focusing on book and publication design for clients near and far. Give me a creative concept and I’ll enhance it, and in its presentation make it shine. I am always ready to take words and images to new places. </p>
-      <p>Why Jigsaw? Because I believe that the world is a puzzle with an infinite number of pieces, all of which fit if you can figure out how. As I see it, my job is to help people present ideas so that their pieces fit with ease and elegance.</p>
+    <script language="javascript" type="text/javascript" src="./js/jigsawjavascript.js"></script>
+  </head>
+  <body onload="loadImage();">
+    <div id="buttonPanel">
+      <a href="./index.html"><img name="home" width="128" height="124" border="0" onmouseover="changeButton(&#39;home&#39;,1)" onmousedown="changeButton(&#39;home&#39;,2)" onmouseout="setButtons()" src="./images/button/home0.jpg"></a>
+      <a href="./books.html"><img name="books" width="101" height="124" border="0" onmouseover="changeButton(&#39;books&#39;,1)" onmousedown="changeButton(&#39;books&#39;,2)" onmouseout="setButtons()" src="./images/button/books0.jpg"></a>
+      <a href="./misc.html"><img name="misc" width="103" height="124" border="0" onmouseover="changeButton(&#39;misc&#39;,1)" onmousedown="changeButton(&#39;misc&#39;,2)" onmouseout="setButtons()" src="./images/button/misc0.jpg"></a>
+      <a href="./logos.html"><img name="logos" width="105" height="124" border="0" onmouseover="changeButton(&#39;logos&#39;,1)" onmousedown="changeButton(&#39;logos&#39;,2)" onmouseout="setButtons()" src="./images/button/logos0.jpg"></a>
+      <a href="./web.html"><img name="web" width="99" height="124" border="0" onmouseover="changeButton(&#39;web&#39;,1)" onmousedown="changeButton(&#39;web&#39;,2)" onmouseout="setButtons()" src="./images/button/web0.jpg"></a>
+      <a href="./clients.html"><img name="clients" width="104" height="124" border="0" onmouseover="changeButton(&#39;clients&#39;,1)" onmousedown="changeButton(&#39;clients&#39;,2)" onmouseout="setButtons()" src="./images/button/clients0.jpg"></a>
+      <a href="./bio.html"><img name="bio" width="104" height="124" border="0" onmouseover="changeButton(&#39;bio&#39;,1)" onmousedown="changeButton(&#39;bio&#39;,2)" onmouseout="setButtons()" src="./images/button/bio2.jpg"></a>
+      <a href="./contact.html"><img name="contact" width="100" height="124" border="0" onmouseover="changeButton(&#39;contact&#39;,1)" onmousedown="changeButton(&#39;contact&#39;,2)" onmouseout="setButtons()" src="./images/button/contact0.jpg"></a>
     </div>
-    <!-- --------------------------------------------------------- -->
-    <!-- contentPanel end div -->
+    <div id="contentPanel">
+      <div id="blackPanel">
+        <img src="./images/button/bio.jpg" id="contentButton">
+        <div id="cycleButtons" style="display: none;">
+          <p>
+          <a href="javascript:void (0)" onmousedown="cycleIllos(&#39;back&#39;)" onmouseup="this.blur()">previous</a> •
+          <a href="javascript:void (0)" onmousedown="cycleIllos(&#39;forward&#39;)" onmouseup="this.blur()">next</a></p>
+        </div>
+      </div>
+      <img src="./images/jane3.jpg" id="illo1" onclick="displayImage(this.src)" style="position: absolute; left: 280px; top: 60px; width: 167px; height: 250px; border-width: 0px; z-index: 2; display: block;">
+      <img src="./images/yellow.jpg" id="illo2" onclick="displayImage(this.src)" style="position:absolute; left:475px; top:60px; width:10px; height:10px; border-width:0px; z-index:1; display:none">
+      <img src="./images/yellow.jpg" id="illo3" onclick="displayImage(this.src)" style="position:absolute; left:550px; top:60px; width:10px; height:10px; border-width:0px; z-index:2; display:none">
+      <script language="javascript" type="text/javascript">
+      <!--
+      //BEGIN SCRIPT
+      //--------------------------------------------------------
+      if(pageName == "clients")
+      {
+      document.getElementById("contentPanel").style.backgroundColor = "#000000";
+      document.getElementById("cycleButtons").style.display = "none";
+      }
+      if(pageName == "bio" || pageName == "contact")
+      {
+      document.getElementById("cycleButtons").style.display = "none";
+      }
+      //--------------------------------------------------------
+      //END SCRIPT
+      //-->
+      </script>
+      <!-- --------------------------------------------------------- -->
+      <div class="bioText" style="position:absolute; left:480px; top:60px; margin-top:-.4em; width:200px; z-index:3">
+        <p>I’m Jane Jeszeck, and I operate Jigsaw,
+        a design studio in Seattle focusing on book and publication design for clients near and far. Give me a creative concept and I’ll enhance it, and in its presentation make it shine. I am always ready to take words and images to new places. </p>
+        <p>Why Jigsaw? Because I believe that the world is a puzzle with an infinite number of pieces, all of which fit if you can figure out how. As I see it, my job is to help people present ideas so that their pieces fit with ease and elegance.</p>
+      </div>
+      <!-- --------------------------------------------------------- -->
+      <!-- contentPanel end div -->
+    </div>
+    <div id="imageOverlay" style="display:none;">
+      <center onclick="killImage()"><img src="./images/white.jpg" id="overlayImage" style="top:30px; border-width:0px; display:block; cursor:pointer"><p style="cursor:pointer; text-align:center; font-size:11px; margin-top:15px;">
+      RETURN</p><p>
+    </p></center>
   </div>
-  <div id="imageOverlay" style="display:none;">
-    <center onclick="killImage()"><img src="./images/white.jpg" id="overlayImage" style="top:30px; border-width:0px; display:block; cursor:pointer"><p style="cursor:pointer; text-align:center; font-size:11px; margin-top:15px;">
-    RETURN</p><p>
-  </p></center>
-</div>
-<script language="javascript" type="text/javascript">
-setButtons();
-</script>
-</body></html>
+  <script language="javascript" type="text/javascript">
+  setButtons();
+  </script>
+  </body>
+</html>
