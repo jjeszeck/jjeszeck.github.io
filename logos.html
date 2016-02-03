@@ -12,48 +12,83 @@
     var layouts = new Array();
     layouts[0]=
     {
-    name:"symmetry",
-    leftIllo1:"370px",
+    name:"seattleKnife",
+    leftIllo1:"420px",
     topIllo1:"80px",
-    widthIllo1:"145px", heightIllo1:"210px", srcIllo1:"./images/logos/symmetry1.jpg",
-    leftIllo2:"540px",
-    topIllo2:"100px",
-    widthIllo2:"211px", heightIllo2:"175px", srcIllo2:"./images/logos/symmetry2.jpg"
+    widthIllo1:"250px", srcIllo1:"./images/logos/00_SeattleKnife.png"
     }
     layouts[1]=
     {
-    name:"seattleTimber",
+    name:"hvbs",
     leftIllo1:"455px",
     topIllo1:"80px",
-    widthIllo1:"185px", heightIllo1:"176px", srcIllo1:"./images/logos/seattleTimber1.jpg"
+    widthIllo1:"185px", srcIllo1:"./images/logos/01_HVBs.png"
     }
     layouts[2]=
-    {
-    name:"sasquatchLogo",
-    leftIllo1:"410px",
-    topIllo1:"100px",
-    widthIllo1:"275px", heightIllo1:"138px", srcIllo1:"./images/logos/sasquatchLogo1.jpg"
-    }
-    layouts[3]=
     {
     name:"eden",
     leftIllo1:"460px",
     topIllo1:"100px",
-    widthIllo1:"178px", heightIllo1:"185px", srcIllo1:"./images/logos/eden1.jpg"
+    widthIllo1:"178px", srcIllo1:"./images/logos/02_Eden.jpg"
+    }
+    layouts[3]=
+    {
+    name:"sasquatchLogo",
+    leftIllo1:"410px",
+    topIllo1:"100px",
+    widthIllo1:"275px", srcIllo1:"./images/logos/03_Sasquatch.jpg"
     }
     layouts[4]=
+    {
+    name:"wagtime",
+    leftIllo1:"460px",
+    topIllo1:"100px",
+    widthIllo1:"178px", srcIllo1:"./images/logos/04_Wagtime.jpg"
+    }
+    layouts[5]=
+    {
+    name:"seattleTimber",
+    leftIllo1:"455px",
+    topIllo1:"80px",
+    widthIllo1:"185px", srcIllo1:"./images/logos/05_SeattleTimberworks.jpg"
+    }
+    layouts[6]=
+    {
+    name:"firefly",
+    leftIllo1:"460px",
+    topIllo1:"100px",
+    widthIllo1:"178px", srcIllo1:"./images/logos/06_Firefly.png"
+    }
+    layouts[7]=
+    {
+    name:"mamaBear",
+    leftIllo1:"460px",
+    topIllo1:"100px",
+    widthIllo1:"178px", srcIllo1:"./images/logos/07_MamaBearPetCare.png"
+    }
+    layouts[8]=
+    {
+    name:"symmetry",
+    leftIllo1:"370px",
+    topIllo1:"80px",
+    widthIllo1:"145px", srcIllo1:"./images/logos/08_Symmetry1.jpg",
+    leftIllo2:"540px",
+    topIllo2:"100px",
+    widthIllo2:"211px", srcIllo2:"./images/logos/08_Symmetry2.jpg"
+    }
+    layouts[9]=
     {
     name:"pennacoLogo",
     leftIllo1:"460px",
     topIllo1:"90px",
-    widthIllo1:"161px", heightIllo1:"185px", srcIllo1:"./images/logos/pennacoLogo1.jpg"
+    widthIllo1:"161px", srcIllo1:"./images/logos/09_Pennaco.jpg"
     }
-    layouts[5]=
+    layouts[10]=
     {
     name:"learningAssets",
     leftIllo1:"410px",
     topIllo1:"100px",
-    widthIllo1:"275px", heightIllo1:"168px", srcIllo1:"./images/logos/learningAssets1.jpg"
+    widthIllo1:"275px", srcIllo1:"./images/logos/10_LearningAssets.jpg"
     }
     var layoutsLoaded = "true";
     //--------------------------------------------------------
@@ -81,37 +116,55 @@
           <a href="javascript:void (0)" onmousedown="cycleIllos(&#39;forward&#39;)" onmouseup="this.blur()">next</a></p>
         </div>
       </div>
-      <img src="./images/logos/symmetry1.jpg" id="illo1" onclick="displayImage(this.src)" style="position: absolute; left: 370px; top: 80px; width: 145px; height: 210px; border-width: 0px; z-index: 2; display: block;">
-      <img src="./images/logos/symmetry2.jpg" id="illo2" onclick="displayImage(this.src)" style="position: absolute; left: 540px; top: 100px; width: 211px; height: 175px; border-width: 0px; z-index: 1; display: block;">
-      <img src="./images/yellow.jpg" id="illo3" onclick="displayImage(this.src)" style="position:absolute; left:550px; top:60px; width:10px; height:10px; border-width:0px; z-index:2; display:none">
-      <script language="javascript" type="text/javascript">
-      <!--
-      //BEGIN SCRIPT
-      //--------------------------------------------------------
-      if(pageName == "clients")
-      {
-      document.getElementById("contentPanel").style.backgroundColor = "#000000";
-      document.getElementById("cycleButtons").style.display = "none";
-      }
-      if(pageName == "bio" || pageName == "contact")
-      {
-      document.getElementById("cycleButtons").style.display = "none";
-      }
-      //--------------------------------------------------------
-      //END SCRIPT
-      //-->
-      </script>
-      <!-- --------------------------------------------------------- -->
-      <!--CAPTIONS-->
-      <div id="symmetry" class="caption" style="position: absolute; left: 400px; top: 320px; width: 300px; z-index: 3; display: block;"><p style="text-align:center;">Physical therapy office</p></div>
-      <div id="seattleTimber" class="caption" style="position:absolute; left:400px; top:320px; width:300px; z-index:3; display:none"><p style="text-align:center;">Post and pole log furniture company</p></div>
-      <div id="sasquatchLogo" class="caption" style="position:absolute; left:400px; top:320px; width:300px; z-index:3; display:none"><p style="text-align:center;">Regional book publisher in the Pacific Northwest</p></div>
-      <div id="eden" class="caption" style="position:absolute; left:400px; top:320px; width:300px; z-index:3; display:none"><p style="text-align:center;">Healing arts center</p></div>
-      <div id="pennacoLogo" class="caption" style="position:absolute; left:400px; top:320px; width:300px; z-index:3; display:none"><p style="text-align:center;">Oil and gas exploration company in the West</p></div>
-      <div id="learningAssets" class="caption" style="position:absolute; left:400px; top:320px; width:300px; z-index:3; display:none"><p style="text-align:center;">Educational tutoring business</p></div>
-      <!-- CAPTIONS-->
-      <!-- --------------------------------------------------------- -->
-      <!-- contentPanel end div -->
+      <div id='imagePanel'>
+        <img src="./images/logos/00_SeattleKnife.png" id="illo1" onclick="displayImage(this.src)" style="position: absolute; left: 405px; top: 80px; width: 399px; border-width: 0px; z-index: 2; display: block;">
+        <img src="" id="illo2" onclick="displayImage(this.src)" style="position: absolute; left: 540px; top: 100px; width: 211px; height: 175px; border-width: 0px; z-index: 1; display: none;">
+        <script language="javascript" type="text/javascript">
+        <!--
+        //BEGIN SCRIPT
+        //--------------------------------------------------------
+        if(pageName == "clients")
+        {
+        document.getElementById("contentPanel").style.backgroundColor = "#000000";
+        document.getElementById("cycleButtons").style.display = "none";
+        }
+        if(pageName == "bio" || pageName == "contact")
+        {
+        document.getElementById("cycleButtons").style.display = "none";
+        }
+        //--------------------------------------------------------
+        //END SCRIPT
+        //-->
+        </script>
+        <!-- --------------------------------------------------------- -->
+        <!--CAPTIONS-->
+        <!-- 00 -->
+        <div id="seattleKnife" class="caption" style="position:absolute; left:400px; top:320px; width:300px; z-index:3; display:none"><p style="text-align:center;">XXXXXXXXXX</p></div>
+        <!-- 01 -->
+        <div id="hvbs" class="caption" style="position:absolute; left:400px; top:320px; width:300px; z-index:3; display:none"><p style="text-align:center;">XXXXXXXXXX</p></div>
+        <!-- 02 -->
+        <div id="eden" class="caption" style="position:absolute; left:400px; top:320px; width:300px; z-index:3; display:none"><p style="text-align:center;">Healing arts center</p></div>
+        <!-- 03 -->
+        <div id="sasquatchLogo" class="caption" style="position:absolute; left:400px; top:320px; width:300px; z-index:3; display:none"><p style="text-align:center;">Regional book publisher in the Pacific Northwest</p></div>
+        <!-- 04 -->
+        <div id="wagtime" class="caption" style="position:absolute; left:400px; top:320px; width:300px; z-index:3; display:none"><p style="text-align:center;">Healing arts center</p></div>
+        <!-- 05 -->
+        <div id="seattleTimber" class="caption" style="position:absolute; left:400px; top:320px; width:300px; z-index:3; display:none"><p style="text-align:center;">
+        <!-- 06 -->
+        <div id="firefly" class="caption" style="position:absolute; left:400px; top:320px; width:300px; z-index:3; display:none"><p style="text-align:center;">XXFirefly</p></div>
+        <!-- 07 -->
+        <div id="mamaBear" class="caption" style="position:absolute; left:400px; top:320px; width:300px; z-index:3; display:none"><p style="text-align:center;">XXMamaBear</p></div>
+        <!-- 08 -->
+        <div id="symmetry" class="caption" style="position: absolute; left: 400px; top: 320px; width: 300px; z-index: 3; display: block;"><p style="text-align:center;">Physical therapy office</p></div>
+        <!-- 09 -->
+        Post and pole log furniture company</p></div>
+        <div id="pennacoLogo" class="caption" style="position:absolute; left:400px; top:320px; width:300px; z-index:3; display:none"><p style="text-align:center;">Oil and gas exploration company in the West</p></div>
+        <!-- 10 -->
+        <div id="learningAssets" class="caption" style="position:absolute; left:400px; top:320px; width:300px; z-index:3; display:none"><p style="text-align:center;">Educational tutoring business</p></div>
+        <!-- CAPTIONS-->
+        <!-- --------------------------------------------------------- -->
+        <!-- contentPanel end div -->
+        </div>
     </div>
     <div id="imageOverlay" style="display:none;">
       <center onclick="killImage()"><img src="./images/white.jpg" id="overlayImage" style="top:30px; border-width:0px; display:block; cursor:pointer"><p style="cursor:pointer; text-align:center; font-size:11px; margin-top:15px;">

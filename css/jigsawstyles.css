@@ -8,8 +8,10 @@ p {font-family:arial,sans-serif; font-size:10px; font-weight:normal; line-height
 
 #homePanel {position:absolute; left:50%; top:194px; margin-left:-430px; width:860px; height:410px; background-color:#c85d31}
 #contentPanel {position:absolute; left:50%; top:194px; margin-left:-430px; width:860px; height:410px; background-color:#fbf8ce}
-#blackPanel {width:245px; height:410px; background-color:#000000}
+#blackPanel {width:28.5%; height:410px; background-color:#000000; float: left;}
 #imageOverlay {position:absolute; left:50%; top:48px; margin-left:-450px; width:900px; height:572px; background-color:#b8dce2; z-index:4;}
+#contentPanel #imagePanel {display: inline-block; width: 71.5%; height: inherit; float: left;}
+#imagePanel img {}
 
 #contentButton {position:absolute; left:32px; top:140px; width:80px; height:80px; border-width:0px; z-index:1}
 
