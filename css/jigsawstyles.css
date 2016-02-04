@@ -10,15 +10,15 @@ p {font-family:arial,sans-serif; font-size:10px; font-weight:normal; line-height
 #contentPanel {position:absolute; left:50%; top:194px; margin-left:-430px; width:860px; height:410px; background-color:#fbf8ce}
 #blackPanel {width:28.5%; height:410px; background-color:#000000; float: left;}
 #imageOverlay {position:absolute; left:50%; top:48px; margin-left:-450px; width:900px; height:572px; background-color:#b8dce2; z-index:4;}
-#contentPanel #imagePanel {display: inline-block; width: 71.5%; height: inherit; float: left;}
-#imagePanel img {}
+#contentPanel #imagePanel {display: inline-block; width: 71.5%; height: inherit; float: left; text-align: center; position: relative;}
+#imagePanel img {display: inline-block; padding-top: 4em;}
 
 #contentButton {position:absolute; left:32px; top:140px; width:80px; height:80px; border-width:0px; z-index:1}
 
 #cycleButtons p {position:absolute; left:126px; top:175px; width:110px; height:15px; font-family:times,serif; font-style:italic; font-size:12px; line-height:13px; margin-top:0em; text-decoration:none; text-align:left; color:#e5e980; letter-spacing:0.1em; z-index:1}
 #cycleButtons a {color:#e5e980; text-decoration:none;}
 #cycleButtons a:hover {color:#bf491a; text-decoration:none;}
-.caption {color:#9a2e15; text-decoration:none;}
+.caption {color:#9a2e15; text-decoration:none; z-index: 3; position: absolute; bottom: 50px; width: 100%; font-size: 12px;}
 .clientList p {color:#e5e980; text-decoration:none;}
 .bioText p {line-height:1.6}
 .contactInfo p {line-height:1; margin:0.3em; text-align:center; letter-spacing:0.1em}

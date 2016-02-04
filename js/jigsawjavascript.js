@@ -59,7 +59,8 @@ document.images[navButName[i]].src = "images/button/" + navButName[i] + "2.jpg";
 document.images[navButName[i]].src = "images/button/" + navButName[i] + "0.jpg";
 			}
 		}
-	}}
+	}
+}
 
 function changeButton(bName,bNum) 
 {
@@ -70,7 +71,8 @@ document.images[bName].src = "images/button/" + bName + bNum + ".jpg";
 
 
 // ROLLOVERS FOR NAV BUTTONS
-//---------------------------------------------------------------------------------------// LOAD SPECIFIC ILLUSTRATION
+//---------------------------------------------------------------------------------------
+// LOAD SPECIFIC ILLUSTRATION
 
 // The eval() functions are necessary to turn strings 
 // back into object properties. The setIllustration() 
@@ -85,7 +87,7 @@ illustration.style.top = eval("layouts[txtNum].topIllo" + illoNumber);
 illustration.style.width = eval("layouts[txtNum].widthIllo" + illoNumber);
 illustration.style.height = eval("layouts[txtNum].heightIllo" + illoNumber);
 illustration.src = eval("layouts[txtNum].srcIllo" + illoNumber);
-illustration.style.display = "block";
+illustration.style.display = "inline-block";
 return illustration;
 }
 
@@ -97,7 +99,7 @@ return illustration;
 // top of this page. The setTimeouts() are 
 // the only way I could get the crappyBrowser
 // to display the images.
-function loadImage()
+function loadImage()
 {
 if(layoutsLoaded == "true")
 {
@@ -168,7 +170,11 @@ function capsOff()
 var capTxt = layouts[i].name;
 document.getElementById(capTxt).style.display = "none";
 	}
-}// LOAD SPECIFIC ILLUSTRATION//---------------------------------------------------------------------------------------
+}
+
+
+// LOAD SPECIFIC ILLUSTRATION
+//---------------------------------------------------------------------------------------
 // CYCLE THROUGH TEXT AND IMAGES
 
 // Each section begins with illustration 0 and
@@ -180,21 +186,30 @@ var txtNum = 0;
 function cycleIllos(direction) 
 {
 clearImages();
-var layoutsLength = layouts.length;	if(direction=="forward")
+var layoutsLength = layouts.length;
+	if(direction=="forward")
 	{
-txtNum++		if(txtNum>=layoutsLength) 
+txtNum++
+		if(txtNum>=layoutsLength) 
 		{
-txtNum=0;		}
+txtNum=0;
+		}
 	}
 	else
-	{txtNum--			if(txtNum<0) 
-			{txtNum=layoutsLength-1;			}
+	{
+txtNum--
+			if(txtNum<0) 
+			{
+txtNum=layoutsLength-1;
+			}
 	}
 window.scrollTo(0,0);
 loadImage();
 }
 
-// CYCLE THROUGH TEXT AND IMAGES//---------------------------------------------------------------------------------------// OPEN WINDOW WITH IMAGE
+// CYCLE THROUGH TEXT AND IMAGES
+//---------------------------------------------------------------------------------------
+// OPEN WINDOW WITH IMAGE
 
 // This is the enlargement you get when
 // you click on an illustration. 
