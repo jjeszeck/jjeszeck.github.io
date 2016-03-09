@@ -178,28 +178,28 @@
     </script>
     <script language="javascript" type="text/javascript" src="./js/jigsawjavascript.js"></script>
   </head>
-<body onload="loadImage();">
+<body onload="app.loadImage();">
   <div id="buttonPanel">
-    <a href="./index.html"><img name="home" width="128" height="124" border="0" onmouseover="changeButton(&#39;home&#39;,1)" onmousedown="changeButton(&#39;home&#39;,2)" onmouseout="setButtons()" src="./images/button/home0.jpg"></a>
-    <a href="./books.html"><img name="books" width="101" height="124" border="0" onmouseover="changeButton(&#39;books&#39;,1)" onmousedown="changeButton(&#39;books&#39;,2)" onmouseout="setButtons()" src="./images/button/books0.jpg"></a>
-    <a href="./misc.html"><img name="misc" width="103" height="124" border="0" onmouseover="changeButton(&#39;misc&#39;,1)" onmousedown="changeButton(&#39;misc&#39;,2)" onmouseout="setButtons()" src="./images/button/misc2.jpg"></a>
-    <a href="./logos.html"><img name="logos" width="105" height="124" border="0" onmouseover="changeButton(&#39;logos&#39;,1)" onmousedown="changeButton(&#39;logos&#39;,2)" onmouseout="setButtons()" src="./images/button/logos0.jpg"></a>
-    <a href="./web.html"><img name="web" width="99" height="124" border="0" onmouseover="changeButton(&#39;web&#39;,1)" onmousedown="changeButton(&#39;web&#39;,2)" onmouseout="setButtons()" src="./images/button/web0.jpg"></a>
-    <a href="./clients.html"><img name="clients" width="104" height="124" border="0" onmouseover="changeButton(&#39;clients&#39;,1)" onmousedown="changeButton(&#39;clients&#39;,2)" onmouseout="setButtons()" src="./images/button/clients0.jpg"></a>
-    <a href="./bio.html"><img name="bio" width="104" height="124" border="0" onmouseover="changeButton(&#39;bio&#39;,1)" onmousedown="changeButton(&#39;bio&#39;,2)" onmouseout="setButtons()" src="./images/button/bio0.jpg"></a>
-    <a href="./contact.html"><img name="contact" width="100" height="124" border="0" onmouseover="changeButton(&#39;contact&#39;,1)" onmousedown="changeButton(&#39;contact&#39;,2)" onmouseout="setButtons()" src="./images/button/contact0.jpg"></a>
+    <a href="./index.html"><img name="home" width="128" height="124" border="0" onmouseover="app.changeButton(&#39;home&#39;,1)" onmousedown="app.changeButton(&#39;home&#39;,2)" onmouseout="app.setButtons()" src="./images/button/home0.jpg"></a>
+    <a href="./books.html"><img name="books" width="101" height="124" border="0" onmouseover="app.changeButton(&#39;books&#39;,1)" onmousedown="app.changeButton(&#39;books&#39;,2)" onmouseout="app.setButtons()" src="./images/button/books0.jpg"></a>
+    <a href="./misc.html"><img name="misc" width="103" height="124" border="0" onmouseover="app.changeButton(&#39;misc&#39;,1)" onmousedown="app.changeButton(&#39;misc&#39;,2)" onmouseout="app.setButtons()" src="./images/button/misc2.jpg"></a>
+    <a href="./logos.html"><img name="logos" width="105" height="124" border="0" onmouseover="app.changeButton(&#39;logos&#39;,1)" onmousedown="app.changeButton(&#39;logos&#39;,2)" onmouseout="app.setButtons()" src="./images/button/logos0.jpg"></a>
+    <a href="./web.html"><img name="web" width="99" height="124" border="0" onmouseover="app.changeButton(&#39;web&#39;,1)" onmousedown="app.changeButton(&#39;web&#39;,2)" onmouseout="app.setButtons()" src="./images/button/web0.jpg"></a>
+    <a href="./clients.html"><img name="clients" width="104" height="124" border="0" onmouseover="app.changeButton(&#39;clients&#39;,1)" onmousedown="app.changeButton(&#39;clients&#39;,2)" onmouseout="app.setButtons()" src="./images/button/clients0.jpg"></a>
+    <a href="./bio.html"><img name="bio" width="104" height="124" border="0" onmouseover="app.changeButton(&#39;bio&#39;,1)" onmousedown="app.changeButton(&#39;bio&#39;,2)" onmouseout="app.setButtons()" src="./images/button/bio0.jpg"></a>
+    <a href="./contact.html"><img name="contact" width="100" height="124" border="0" onmouseover="app.changeButton(&#39;contact&#39;,1)" onmousedown="app.changeButton(&#39;contact&#39;,2)" onmouseout="app.setButtons()" src="./images/button/contact0.jpg"></a>
   </div>
   <div id="contentPanel">
     <div id="blackPanel">
       <img src="./images/button/misc.jpg" id="contentButton">
       <div id="cycleButtons">
-        <p><a href="javascript:void (0)" onmousedown="cycleIllos(&#39;back&#39;)" onmouseup="this.blur()">previous</a> •
-        <a href="javascript:void (0)" onmousedown="cycleIllos(&#39;forward&#39;)" onmouseup="this.blur()">next</a></p>
+        <p><a href="javascript:void (0)" onmousedown="app.cycleIllos(&#39;back&#39;)" onmouseup="this.blur()">previous</a> •
+        <a href="javascript:void (0)" onmousedown="app.cycleIllos(&#39;forward&#39;)" onmouseup="this.blur()">next</a></p>
       </div>
     </div>
-    <img src="./images/misc/00_engineering1.jpg" id="illo1" onclick="displayImage(this.src)" style="position: absolute; left: 280px; top: 60px; width: 200px; height: 259px; border-width: 0px; z-index: 2; display: block;">
-    <img src="./images/misc/00_engineering2.jpg" id="illo2" onclick="displayImage(this.src)" style="position: absolute; left: 520px; top: 60px; width: 200px; height: 259px; border-width: 0px; z-index: 1; display: block;">
-    <img src="" id="illo3" onclick="displayImage(this.src)" style="position: absolute; left: 520px; top: 60px; width: 200px; height: 259px; border-width: 0px; z-index: 1; display: none;">
+    <img src="./images/misc/00_engineering1.jpg" id="illo1" onclick="app.displayImage(this.src)" style="position: absolute; left: 280px; top: 60px; width: 200px; height: 259px; border-width: 0px; z-index: 2; display: block;">
+    <img src="./images/misc/00_engineering2.jpg" id="illo2" onclick="app.displayImage(this.src)" style="position: absolute; left: 520px; top: 60px; width: 200px; height: 259px; border-width: 0px; z-index: 1; display: block;">
+    <img src="" id="illo3" onclick="app.displayImage(this.src)" style="position: absolute; left: 520px; top: 60px; width: 200px; height: 259px; border-width: 0px; z-index: 1; display: none;">
     
     <script language="javascript" type="text/javascript">
     <!--
@@ -242,11 +242,11 @@
     <!-- contentPanel end div -->
   </div>
   <div id="imageOverlay" style="display:none;">
-    <center onclick="killImage()"><img src="./images/white.jpg" id="overlayImage" style="top:30px; border-width:0px; display:block; cursor:pointer"><p style="cursor:pointer; text-align:center; font-size:11px; margin-top:15px;">
+    <center onclick="app.killImage()"><img src="./images/white.jpg" id="overlayImage" style="top:30px; border-width:0px; display:block; cursor:pointer"><p style="cursor:pointer; text-align:center; font-size:11px; margin-top:15px;">
     RETURN</p><p>
   </p></center>
 </div>
 <script language="javascript" type="text/javascript">
-setButtons();
+app.setButtons();
 </script>
 </body></html>

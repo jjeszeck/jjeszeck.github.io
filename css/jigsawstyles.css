@@ -30,7 +30,8 @@ img#illo1, img#illo2, img#illo3 {cursor:pointer}
 
 
 #blackbox {position:absolute; left:10px; top:20px; width:40px; height:40px; background-color:#004400}
-
+#captions {position: absolute; left: 560px; top: 220px; width: 220px; z-index: 3; display: block;}
+#capTitle {font-weight: bold}
 
 /*
 p.noTop {margin-top:0em}

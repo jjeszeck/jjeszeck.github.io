@@ -4,452 +4,279 @@
   <title>Jigsaw Design, Seattle | Books</title>
   <link rel="stylesheet" type="text/css" href="./css/jigsawstyles.css" media="all">
   <title>books</title>
+  <style>
+    #illo1 {position: absolute; left: 280px; top: 60px; max-height: 340px; width: 260px; border-width: 0px; z-index: 2; display: block;}
+    #illo2 {position: absolute; left: 560px; top: 60px; width: 257px; border-width: 0px; z-index: 1; display: block;}
+  </style>
   <script language="javascript" type="text/javascript">
   <!--
   //BEGIN SCRIPT
   //--------------------------------------------------------
   var pageName = "books";
   var layouts = new Array();
-  layouts[0]=
-  {
-  name:"TheMAPasART",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"257px", heightIllo1:"235px", srcIllo1:"./images/books/01_TheMapAsArt1.jpg",
-  leftIllo2:"560px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"108px", srcIllo2:"./images/books/01_TheMapAsArt2.jpg"
-  }
-  layouts[1]=
-  {
-  name:"MacroPhotography",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"242px", heightIllo1:"235px", srcIllo1:"./images/books/MacroPhotography1.jpg",
-  leftIllo2:"545px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"123px", srcIllo2:"./images/books/MacroPhotography2.jpg"
-  }
-  layouts[2]=
-  {
-  name:"blackstock",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"163px", heightIllo1:"282px", srcIllo1:"./images/books/blackstock1.jpg",
-  leftIllo2:"475px",
-  topIllo2:"60px",
-  widthIllo2:"261px", heightIllo2:"225px", srcIllo2:"./images/books/blackstock2.jpg"
-  }
-  layouts[3]=
-  {
-  name:"travels",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"250px", heightIllo1:"219px", srcIllo1:"./images/books/TravelsToTheEdge2.jpg",
-  leftIllo2:"550px",
-  topIllo2:"60px",
-  widthIllo2:"280px", heightIllo2:"122px", srcIllo2:"./images/books/TravelsToTheEdge1.jpg"
-  }
-  layouts[4]=
-  {
-  name:"TheLastPolarBear",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"287px", heightIllo1:"235px", srcIllo1:"./images/books/TheLastPolarBear1.jpg",
-  leftIllo2:"585px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"100px", srcIllo2:"./images/books/TheLastPolarBear2.jpg"
-  }
-  layouts[5]=
-  {
-  name:"IceBear",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"287px", heightIllo1:"245px", srcIllo1:"./images/books/IceBear1.jpg",
-  leftIllo2:"585px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"102px", srcIllo2:"./images/books/IceBear2.jpg"
-  }
-  layouts[6]=
-  {
-  name:"SalmonInTheTrees",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"275px", heightIllo1:"248px", srcIllo1:"./images/books/Salmon1.jpg",
-  leftIllo2:"585px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"108px", srcIllo2:"./images/books/Salmon2.jpg"
-  }
-  layouts[7]=
-  {
-  name:"PlanetIce",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"275px", heightIllo1:"241px", srcIllo1:"./images/books/PlanetIce1.jpg",
-  leftIllo2:"585px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"105px", srcIllo2:"./images/books/PlanetIce2.jpg"
-  }
-  layouts[8]=
-  {
-  name:"RevolutionaryYardscape",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"251px", heightIllo1:"282px", srcIllo1:"./images/books/RevolutionaryYardscape1.jpg",
-  leftIllo2:"555px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"135px", srcIllo2:"./images/books/RevolutionaryYardScape2.jpg"
-  }
-  layouts[9]=
-  {
-  name:"UrbanPantry",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"240px", heightIllo1:"292px", srcIllo1:"./images/books/UrbanPantry1.jpg",
-  leftIllo2:"550px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"146px", srcIllo2:"./images/books/UrbanPantry2.jpg"
-  }
-  layouts[10]=
-  {
-  name:"noGood",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"252px", heightIllo1:"252px", srcIllo1:"./images/books/noGood1.jpg",
-  leftIllo2:"550px",
-  topIllo2:"60px",
-  widthIllo2:"231px", heightIllo2:"116px", srcIllo2:"./images/books/noGood2.jpg"
-  }
-  layouts[11]=
-  {
-  name:"EdibleHeirlooms",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"259px", heightIllo1:"302px", srcIllo1:"./images/books/EdibleHeirlooms1.jpg",
-  leftIllo2:"550px",
-  topIllo2:"60px",
-  widthIllo2:"264px", heightIllo2:"154px", srcIllo2:"./images/books/EdibleHeirlooms2.jpg"
-  }
-  layouts[12]=
-  {
-  name:"FearlessColorGardens",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"250px", heightIllo1:"293px", srcIllo1:"./images/books/FearlessColor1.jpg",
-  leftIllo2:"560px",
-  topIllo2:"60px",
-  widthIllo2:"245px", heightIllo2:"144px", srcIllo2:"./images/books/FearlessColor2.jpg"
-  }
-  layouts[13]=
-  {
-  name:"HeirloomBeans",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"220px", heightIllo1:"290px", srcIllo1:"./images/books/HeirloomBeans1.jpg",
-  leftIllo2:"530px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"159px", srcIllo2:"./images/books/HeirloomBeans2.jpg"
-  }
-  layouts[14]=
-  {
-  name:"WestCoastCheese",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"203px", heightIllo1:"290px", srcIllo1:"./images/books/WestCoastCheese1.jpg",
-  leftIllo2:"510px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"172px", srcIllo2:"./images/books/WestCoastCheese2.jpg"
-  }
-  layouts[15]=
-  {
-  name:"NorthwestForaging",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"238px", heightIllo1:"324px", srcIllo1:"./images/books/NorthwestForaging1.jpg",
-  leftIllo2:"550px",
-  topIllo2:"60px",
-  widthIllo2:"280px", heightIllo2:"191px", srcIllo2:"./images/books/NorthwestForaging2.jpg"
-  }
-  layouts[16]=
-  {
-  name:"FromTreeToTable",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"250px", heightIllo1:"304px", srcIllo1:"./images/books/FromTreeToTable2.jpg",
-  leftIllo2:"550px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"146px", srcIllo2:"./images/books/FromTreeToTable1.jpg"
-  }
-  layouts[17]=
-  {
-  name:"PacificFeast",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"250px", heightIllo1:"302px", srcIllo1:"./images/books/PacificFeast1.jpg",
-  leftIllo2:"550px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"146px", srcIllo2:"./images/books/PacificFeast2.jpg"
-  }
-  layouts[18]=
-  {
-  name:"CompleteChiliPepperBook",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"240px", heightIllo1:"240px", srcIllo1:"./images/books/ChilePepper1.jpg",
-  leftIllo2:"550px",
-  topIllo2:"60px",
-  widthIllo2:"280px", heightIllo2:"140px", srcIllo2:"./images/books/ChilePepper2.jpg"
-  }
-  layouts[19]=
-  {
-  name:"NoBetterTime",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"259px", heightIllo1:"259px", srcIllo1:"./images/books/NoBetterTime1.jpg",
-  leftIllo2:"550px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"120px", srcIllo2:"./images/books/NoBetterTime2.jpg"
-  }
-  layouts[20]=
-  {
-  name:"Resurrection",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"259px", heightIllo1:"235px", srcIllo1:"./images/books/Resurrection1.jpg",
-  leftIllo2:"560px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"109px", srcIllo2:"./images/books/Resurrection2.jpg"
-  }
-  layouts[21]=
-  {
-  name:"GreenHomePrimer",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"209px", heightIllo1:"235px", srcIllo1:"./images/books/GreenHomePrimer1.jpg",
-  leftIllo2:"510px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"135px", srcIllo2:"./images/books/GreenHomePrimer2.jpg"
-  }
-  layouts[22]=
-  {
-  name:"ColumbiaHighlands",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"261px", heightIllo1:"235px", srcIllo1:"./images/books/ColumbiaHighlands1.jpg",
-  leftIllo2:"565px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"108px", srcIllo2:"./images/books/ColumbiaHighlands2.jpg"
-  }
-  layouts[23]=
-  {
-  name:"Coleus",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"251px", heightIllo1:"282px", srcIllo1:"./images/books/Coleus1.jpg",
-  leftIllo2:"555px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"135px", srcIllo2:"./images/books/Coleus2.jpg"
-  }
-  layouts[24]=
-  {
-  name:"watercover",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"244px", heightIllo1:"282px", srcIllo1:"./images/books/watercover1.jpg"
-  }
-  layouts[25]=
-  {
-  name:"sleepingbabies",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"259px", heightIllo1:"259px", srcIllo1:"./images/books/SleepingBabies1.jpg",
-  leftIllo2:"560px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"120px", srcIllo2:"./images/books/SleepingBabies2.jpg"
-  }
-  layouts[26]=
-  {
-  name:"youAreHere",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"197px", heightIllo1:"282px", srcIllo1:"./images/books/youAreHere1.jpg",
-  leftIllo2:"495px",
-  topIllo2:"60px",
-  widthIllo2:"263px", heightIllo2:"188px", srcIllo2:"./images/books/youAreHere2.jpg"
-  }
-  layouts[27]=
-  {
-  name:"potsGarden",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"251px", heightIllo1:"282px", srcIllo1:"./images/books/potsGarden1.jpg",
-  leftIllo2:"550px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"135px", srcIllo2:"./images/books/potsGarden2.jpg"
-  }
-  layouts[28]=
-  {
-  name:"artOfTravel",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"208px", heightIllo1:"282px", srcIllo1:"./images/books/artOfTravel1.jpg",
-  leftIllo2:"510px",
-  topIllo2:"60px",
-  widthIllo2:"263px", heightIllo2:"188px", srcIllo2:"./images/books/artOfTravel2.jpg"
-  }
-  layouts[29]=
-  {
-  name:"parentsChildren",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"188px", heightIllo1:"282px", srcIllo1:"./images/books/parentsChildren1.jpg"
-  }
-  layouts[30]=
-  {
-  name:"containerInspiration",
-  leftIllo1:"260px",
-  topIllo1:"60px",
-  widthIllo1:"237px", heightIllo1:"169px", srcIllo1:"./images/books/containerInspiration1.jpg",
-  leftIllo2:"520px",
-  topIllo2:"60px",
-  widthIllo2:"320px", heightIllo2:"114px", srcIllo2:"./images/books/containerInspiration2.jpg"
-  }
-  layouts[31]=
-  {
-  name:"wildGlueGun",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"230px", heightIllo1:"259px", srcIllo1:"./images/books/wildGlueGun1.jpg",
-  leftIllo2:"540px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"135px", srcIllo2:"./images/books/wildGlueGun2.jpg"
-  }
-  layouts[32]=
-  {
-  name:"saveLastBall",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"264px", heightIllo1:"235px", srcIllo1:"./images/books/saveLastBall1.jpg",
-  leftIllo2:"560px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"107px", srcIllo2:"./images/books/saveLastBall2.jpg"
-  }
-  layouts[33]=
-  {
-  name:"showeredLove",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"251px", heightIllo1:"282px", srcIllo1:"./images/books/showeredLove1.jpg",
-  leftIllo2:"550px",
-  topIllo2:"60px",
-  widthIllo2:"234px", heightIllo2:"135px", srcIllo2:"./images/books/showeredLove2.jpg"
-  }
-  layouts[34]=
-  {
-  name:"gettingWild",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"194px", heightIllo1:"281px", srcIllo1:"./images/books/gettingWild1.jpg",
-  leftIllo2:"500px",
-  topIllo2:"60px",
-  widthIllo2:"259px", heightIllo2:"187px", srcIllo2:"./images/books/gettingWild2.jpg"
-  }
-  layouts[35]=
-  {
-  name:"expectantNude",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"230px", heightIllo1:"259px", srcIllo1:"./images/books/expectantNude1.jpg",
-  leftIllo2:"540px",
-  topIllo2:"60px",
-  widthIllo2:"249px", heightIllo2:"140px", srcIllo2:"./images/books/expectantNude2.jpg"
-  }
-  layouts[36]=
-  {
-  name:"lifeAfter",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"191px", heightIllo1:"282px", srcIllo1:"./images/books/lifeAfter601.jpg"
-  }
-  layouts[37]=
-  {
-  name:"artisansWhidbey",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"262px", heightIllo1:"235px", srcIllo1:"./images/books/artisansWhidbey1.jpg",
-  leftIllo2:"560px",
-  topIllo2:"60px",
-  widthIllo2:"240px", heightIllo2:"108px", srcIllo2:"./images/books/artisansWhidbey2.jpg"
-  }
-  layouts[38]=
-  {
-  name:"taj",
-  leftIllo1:"280px",
-  topIllo1:"60px",
-  widthIllo1:"182px", heightIllo1:"282px", srcIllo1:"./images/books/taj1.jpg"
-  }
-  var layoutsLoaded = "true";
+  
+  layouts.push({title: 'THE LIVING BIRD', slug: 'TheLivingBird', text: ['XXX'], publisher: 'XXX', image_count: 1})
+  layouts.push({title: 'THE MAP AS ART', slug: 'TheMapAsArt', text: ['Collection of contemporary art exploring cartography'], publisher: 'PRINCETON ARCHITECTURAL PRESS', image_count: 2})
+  layouts.push({title: 'YOU ARE HERE', slug: 'YouAreHere', text: ['Book of maps of personal geography and realms of fantasy'], publisher: 'PRINCETON ARCHITECTURAL PRESS', image_count: 2})
+  layouts.push({title: 'WHERE WATER IS GOLD', slug: 'WhereWaterIsGold', text: ['XXX'], publisher: 'XXX', image_count: 1})
+  layouts.push({title: 'BLACKSTOCK\'S COLLECTIONS', slug: 'BlackstocksCollections', text: ['Drawings of an autistic artist','2006 BEST IN SHOW Award Publishers Association of the West'], publisher: 'PRINCETON ARCHITECTURAL PRESS', image_count: 2})
+  layouts.push({title: 'TRAVELS TO THE EDGE', slug: 'TravelsToTheEdge', text: ['Awe-inspiring places, cultures and creatures, captured by Art Wolfe, acclaimed photographer and companion piece to 13-episode public television series'], publisher: 'MOUNTAINEERS BOOKS', image_count: 2})
+
+
+  // layouts[0]=
+  // {name:"TheLivingBird",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"257px", heightIllo1:"235px", srcIllo1:"./images/books/00_TheLivingBird.jpg"}
+  // layouts[1]=
+  // {name:"TheMapAsArt",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"257px", srcIllo1:"./images/books/01_TheMapAsArt1.jpg",
+  // leftIllo2:"560px",topIllo2:"60px",widthIllo2:"240px", srcIllo2:"./images/books/01_TheMapAsArt2.jpg"}
+  // layouts[2]=
+  // {name:"YouAreHere",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"197px", heightIllo1:"282px", srcIllo1:"./images/books/02_YouAreHere1.jpg",
+  // leftIllo2:"495px",topIllo2:"60px",widthIllo2:"263px", heightIllo2:"188px", srcIllo2:"./images/books/02_YouAreHere2.jpg"}
+  // layouts[3]=
+  // {name:"WhereWaterIsGold",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"197px", heightIllo1:"282px", srcIllo1:"./images/books/03_WhereWaterIsGold.jpg"}
+  // layouts[4]=
+  // {name:"Blackstock",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"163px", heightIllo1:"282px", srcIllo1:"./images/books/04_blackstock1.jpg",
+  // leftIllo2:"475px",topIllo2:"60px",widthIllo2:"261px", heightIllo2:"225px", srcIllo2:"./images/books/04_blackstock2.jpg"}
+  // layouts[5]=
+  // {name:"travels",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"250px", heightIllo1:"219px", srcIllo1:"./images/books/05_TravelsToTheEdge2.jpg",
+  // leftIllo2:"550px",topIllo2:"60px",widthIllo2:"280px", heightIllo2:"122px", srcIllo2:"./images/books/05_TravelsToTheEdge1.jpg"}
+  // layouts[6]=
+  // {name:"TheLastPolarBear",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"287px", heightIllo1:"235px", srcIllo1:"./images/books/06_TheLastPolarBear1.jpg",
+  // leftIllo2:"585px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"100px", srcIllo2:"./images/books/06_TheLastPolarBear2.jpg"}
+  // layouts[7]=
+  // {name:"IceBear",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"287px", heightIllo1:"245px", srcIllo1:"./images/books/07_IceBear1.jpg",
+  // leftIllo2:"585px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"102px", srcIllo2:"./images/books/07_IceBear2.jpg"}
+  // layouts[8]=
+  // {name:"SalmonInTheTrees",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"275px", heightIllo1:"248px", srcIllo1:"./images/books/08_Salmon1.jpg",
+  // leftIllo2:"585px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"108px", srcIllo2:"./images/books/08_Salmon2.jpg"}
+  // layouts[9]=
+  // {name:"OnArcticGround",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"257px", srcIllo1:"./images/books/09_OnArcticGround.jpg"}
+  // layouts[10]=
+  // {name:"PlanetIce",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"275px", heightIllo1:"241px", srcIllo1:"./images/books/10_PlanetIce1.jpg",
+  // leftIllo2:"585px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"105px", srcIllo2:"./images/books/10_PlanetIce2.jpg"}
+  // layouts[11]=
+  // {name:"Resurrection",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"259px", heightIllo1:"235px", srcIllo1:"./images/books/11_Resurrection1.jpg",
+  // leftIllo2:"560px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"109px", srcIllo2:"./images/books/11_Resurrection2.jpg"}
+  // layouts[12]=
+  // {name:"ColumbiaHighlands",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"261px", heightIllo1:"235px", srcIllo1:"./images/books/12_ColumbiaHighlands1.jpg",
+  // leftIllo2:"565px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"108px", srcIllo2:"./images/books/12_ColumbiaHighlands2.jpg"}
+  // layouts[13]=
+  // {name:"UpToNoGood",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"252px", heightIllo1:"252px", srcIllo1:"./images/books/13_UpToNoGood1.jpg",
+  // leftIllo2:"550px",topIllo2:"60px",widthIllo2:"231px", heightIllo2:"116px", srcIllo2:"./images/books/13_UpToNoGood2.jpg"}
+  // layouts[14]=
+  // {name:"CloserToWildness",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"257px", srcIllo1:"./images/books/14_CloserToWildness.jpg"}
+  // layouts[15]=
+  // {name:"MacroPhotography",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"242px", heightIllo1:"235px", srcIllo1:"./images/books/15_MacroPhotography1.jpg",
+  // leftIllo2:"545px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"123px", srcIllo2:"./images/books/15_MacroPhotography2.jpg"}
+
+  
+  
+
+  
+  // layouts[8]=
+  // {name:"RevolutionaryYardscape",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"251px", heightIllo1:"282px", srcIllo1:"./images/books/RevolutionaryYardscape1.jpg",
+  // leftIllo2:"555px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"135px", srcIllo2:"./images/books/RevolutionaryYardScape2.jpg"}
+  // layouts[9]=
+  // {name:"UrbanPantry",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"240px", heightIllo1:"292px", srcIllo1:"./images/books/UrbanPantry1.jpg",
+  // leftIllo2:"550px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"146px", srcIllo2:"./images/books/UrbanPantry2.jpg"}
+  
+  // layouts[11]=
+  // {name:"EdibleHeirlooms",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"259px", heightIllo1:"302px", srcIllo1:"./images/books/EdibleHeirlooms1.jpg",
+  // leftIllo2:"550px",topIllo2:"60px",widthIllo2:"264px", heightIllo2:"154px", srcIllo2:"./images/books/EdibleHeirlooms2.jpg"}
+  // layouts[12]=
+  // {name:"FearlessColorGardens",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"250px", heightIllo1:"293px", srcIllo1:"./images/books/FearlessColor1.jpg",
+  // leftIllo2:"560px",topIllo2:"60px",widthIllo2:"245px", heightIllo2:"144px", srcIllo2:"./images/books/FearlessColor2.jpg"}
+  // layouts[13]=
+  // {name:"HeirloomBeans",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"220px", heightIllo1:"290px", srcIllo1:"./images/books/HeirloomBeans1.jpg",
+  // leftIllo2:"530px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"159px", srcIllo2:"./images/books/HeirloomBeans2.jpg"}
+  // layouts[14]=
+  // {name:"WestCoastCheese",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"203px", heightIllo1:"290px", srcIllo1:"./images/books/WestCoastCheese1.jpg",
+  // leftIllo2:"510px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"172px", srcIllo2:"./images/books/WestCoastCheese2.jpg"}
+  // layouts[15]=
+  // {name:"NorthwestForaging",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"238px", heightIllo1:"324px", srcIllo1:"./images/books/NorthwestForaging1.jpg",
+  // leftIllo2:"550px",topIllo2:"60px",widthIllo2:"280px", heightIllo2:"191px", srcIllo2:"./images/books/NorthwestForaging2.jpg"}
+  // layouts[16]=
+  // {name:"FromTreeToTable",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"250px", heightIllo1:"304px", srcIllo1:"./images/books/FromTreeToTable2.jpg",
+  // leftIllo2:"550px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"146px", srcIllo2:"./images/books/FromTreeToTable1.jpg"}
+  // layouts[17]=
+  // {name:"PacificFeast",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"250px", heightIllo1:"302px", srcIllo1:"./images/books/PacificFeast1.jpg",
+  // leftIllo2:"550px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"146px", srcIllo2:"./images/books/PacificFeast2.jpg"}
+  // layouts[18]=
+  // {name:"CompleteChiliPepperBook",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"240px", heightIllo1:"240px", srcIllo1:"./images/books/ChilePepper1.jpg",
+  // leftIllo2:"550px",topIllo2:"60px",widthIllo2:"280px", heightIllo2:"140px", srcIllo2:"./images/books/ChilePepper2.jpg"}
+  // layouts[19]=
+  // {name:"NoBetterTime",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"259px", heightIllo1:"259px", srcIllo1:"./images/books/NoBetterTime1.jpg",
+  // leftIllo2:"550px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"120px", srcIllo2:"./images/books/NoBetterTime2.jpg"}
+
+  // layouts[21]=
+  // {name:"GreenHomePrimer",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"209px", heightIllo1:"235px", srcIllo1:"./images/books/GreenHomePrimer1.jpg",
+  // leftIllo2:"510px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"135px", srcIllo2:"./images/books/GreenHomePrimer2.jpg"}
+  
+  // layouts[23]=
+  // {name:"Coleus",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"251px", heightIllo1:"282px", srcIllo1:"./images/books/Coleus1.jpg",
+  // leftIllo2:"555px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"135px", srcIllo2:"./images/books/Coleus2.jpg"}
+  // layouts[21]=
+  // {name:"BuyThisBook",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"244px", heightIllo1:"282px", srcIllo1:"./images/books/21_BuyThisBook.jpg"}
+  // layouts[25]=
+  // {name:"sleepingbabies",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"259px", heightIllo1:"259px", srcIllo1:"./images/books/SleepingBabies1.jpg",
+  // leftIllo2:"560px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"120px", srcIllo2:"./images/books/SleepingBabies2.jpg"}
+  // layouts[27]=
+  // {name:"potsGarden",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"251px", heightIllo1:"282px", srcIllo1:"./images/books/potsGarden1.jpg",
+  // leftIllo2:"550px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"135px", srcIllo2:"./images/books/potsGarden2.jpg"}
+  // layouts[28]=
+  // {name:"artOfTravel",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"208px", heightIllo1:"282px", srcIllo1:"./images/books/artOfTravel1.jpg",
+  // leftIllo2:"510px",topIllo2:"60px",widthIllo2:"263px", heightIllo2:"188px", srcIllo2:"./images/books/artOfTravel2.jpg"}
+  // layouts[29]=
+  // {name:"parentsChildren",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"188px", heightIllo1:"282px", srcIllo1:"./images/books/parentsChildren1.jpg"}
+  // layouts[30]=
+  // {name:"containerInspiration",
+  // leftIllo1:"260px",topIllo1:"60px",widthIllo1:"237px", heightIllo1:"169px", srcIllo1:"./images/books/containerInspiration1.jpg",
+  // leftIllo2:"520px",topIllo2:"60px",widthIllo2:"320px", heightIllo2:"114px", srcIllo2:"./images/books/containerInspiration2.jpg"}
+  // layouts[31]=
+  // {name:"wildGlueGun",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"230px", heightIllo1:"259px", srcIllo1:"./images/books/wildGlueGun1.jpg",
+  // leftIllo2:"540px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"135px", srcIllo2:"./images/books/wildGlueGun2.jpg"}
+  // layouts[32]=
+  // {name:"saveLastBall",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"264px", heightIllo1:"235px", srcIllo1:"./images/books/saveLastBall1.jpg",
+  // leftIllo2:"560px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"107px", srcIllo2:"./images/books/saveLastBall2.jpg"}
+  // layouts[33]=
+  // {name:"showeredLove",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"251px", heightIllo1:"282px", srcIllo1:"./images/books/showeredLove1.jpg",
+  // leftIllo2:"550px",topIllo2:"60px",widthIllo2:"234px", heightIllo2:"135px", srcIllo2:"./images/books/showeredLove2.jpg"}
+  // layouts[34]=
+  // {name:"gettingWild",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"194px", heightIllo1:"281px", srcIllo1:"./images/books/gettingWild1.jpg",
+  // leftIllo2:"500px",topIllo2:"60px",widthIllo2:"259px", heightIllo2:"187px", srcIllo2:"./images/books/gettingWild2.jpg"}
+  // layouts[35]=
+  // {name:"expectantNude",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"230px", heightIllo1:"259px", srcIllo1:"./images/books/expectantNude1.jpg",
+  // leftIllo2:"540px",topIllo2:"60px",widthIllo2:"249px", heightIllo2:"140px", srcIllo2:"./images/books/expectantNude2.jpg"}
+  // layouts[36]=
+  // {name:"lifeAfter",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"191px", heightIllo1:"282px", srcIllo1:"./images/books/lifeAfter601.jpg"}
+  // layouts[37]=
+  // {name:"artisansWhidbey",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"262px", heightIllo1:"235px", srcIllo1:"./images/books/artisansWhidbey1.jpg",
+  // leftIllo2:"560px",topIllo2:"60px",widthIllo2:"240px", heightIllo2:"108px", srcIllo2:"./images/books/artisansWhidbey2.jpg"}
+  // layouts[38]=
+  // {name:"taj",
+  // leftIllo1:"280px",topIllo1:"60px",widthIllo1:"182px", heightIllo1:"282px", srcIllo1:"./images/books/taj1.jpg"}
+  var layoutsLoaded = true;
   //--------------------------------------------------------
   //END SCRIPT
   //-->
   </script>
   <script language="javascript" type="text/javascript" src="./js/jigsawjavascript.js"></script>
 </head>
-<body onload="loadImage();">
+<body onload="app.loadImage();">
   <div id="buttonPanel">
-    <a href="./index.html"><img name="home" width="128" height="124" border="0" onmouseover="changeButton(&#39;home&#39;,1)" onmousedown="changeButton(&#39;home&#39;,2)" onmouseout="setButtons()" src="./images/button/home0.jpg"></a>
-    <a href="./books.html"><img name="books" width="101" height="124" border="0" onmouseover="changeButton(&#39;books&#39;,1)" onmousedown="changeButton(&#39;books&#39;,2)" onmouseout="setButtons()" src="./images/button/books2.jpg"></a>
-    <a href="./misc.html"><img name="misc" width="103" height="124" border="0" onmouseover="changeButton(&#39;misc&#39;,1)" onmousedown="changeButton(&#39;misc&#39;,2)" onmouseout="setButtons()" src="./images/button/misc0.jpg"></a>
-    <a href="./logos.html"><img name="logos" width="105" height="124" border="0" onmouseover="changeButton(&#39;logos&#39;,1)" onmousedown="changeButton(&#39;logos&#39;,2)" onmouseout="setButtons()" src="./images/button/logos1.jpg"></a>
-    <a href="./web.html"><img name="web" width="99" height="124" border="0" onmouseover="changeButton(&#39;web&#39;,1)" onmousedown="changeButton(&#39;web&#39;,2)" onmouseout="setButtons()" src="./images/button/web0.jpg"></a>
-    <a href="./clients.html"><img name="clients" width="104" height="124" border="0" onmouseover="changeButton(&#39;clients&#39;,1)" onmousedown="changeButton(&#39;clients&#39;,2)" onmouseout="setButtons()" src="./images/button/clients0.jpg"></a>
-    <a href="./bio.html"><img name="bio" width="104" height="124" border="0" onmouseover="changeButton(&#39;bio&#39;,1)" onmousedown="changeButton(&#39;bio&#39;,2)" onmouseout="setButtons()" src="./images/button/bio0.jpg"></a>
-    <a href="./contact.html"><img name="contact" width="100" height="124" border="0" onmouseover="changeButton(&#39;contact&#39;,1)" onmousedown="changeButton(&#39;contact&#39;,2)" onmouseout="setButtons()" src="./images/button/contact0.jpg"></a>
+    <a href="./index.html"><img name="home" width="128" height="124" border="0" onmouseover="app.changeButton(&#39;home&#39;,1)" onmousedown="app.changeButton(&#39;home&#39;,2)" onmouseout="app.setButtons()" src="./images/button/home0.jpg"></a>
+    <a href="./books.html"><img name="books" width="101" height="124" border="0" onmouseover="app.changeButton(&#39;books&#39;,1)" onmousedown="app.changeButton(&#39;books&#39;,2)" onmouseout="app.setButtons()" src="./images/button/books2.jpg"></a>
+    <a href="./misc.html"><img name="misc" width="103" height="124" border="0" onmouseover="app.changeButton(&#39;misc&#39;,1)" onmousedown="app.changeButton(&#39;misc&#39;,2)" onmouseout="app.setButtons()" src="./images/button/misc0.jpg"></a>
+    <a href="./logos.html"><img name="logos" width="105" height="124" border="0" onmouseover="app.changeButton(&#39;logos&#39;,1)" onmousedown="app.changeButton(&#39;logos&#39;,2)" onmouseout="app.setButtons()" src="./images/button/logos1.jpg"></a>
+    <a href="./web.html"><img name="web" width="99" height="124" border="0" onmouseover="app.changeButton(&#39;web&#39;,1)" onmousedown="app.changeButton(&#39;web&#39;,2)" onmouseout="app.setButtons()" src="./images/button/web0.jpg"></a>
+    <a href="./clients.html"><img name="clients" width="104" height="124" border="0" onmouseover="app.changeButton(&#39;clients&#39;,1)" onmousedown="app.changeButton(&#39;clients&#39;,2)" onmouseout="app.setButtons()" src="./images/button/clients0.jpg"></a>
+    <a href="./bio.html"><img name="bio" width="104" height="124" border="0" onmouseover="app.changeButton(&#39;bio&#39;,1)" onmousedown="app.changeButton(&#39;bio&#39;,2)" onmouseout="app.setButtons()" src="./images/button/bio0.jpg"></a>
+    <a href="./contact.html"><img name="contact" width="100" height="124" border="0" onmouseover="app.changeButton(&#39;contact&#39;,1)" onmousedown="app.changeButton(&#39;contact&#39;,2)" onmouseout="app.setButtons()" src="./images/button/contact0.jpg"></a>
   </div>
   <div id="contentPanel">
     <div id="blackPanel">
       <img src="./images/button/books.jpg" id="contentButton">
       <div id="cycleButtons">
         <p>
-        <a href="javascript:void (0)" onmousedown="cycleIllos(&#39;back&#39;)" onmouseup="this.blur()">previous</a> •
-        <a href="javascript:void (0)" onmousedown="cycleIllos(&#39;forward&#39;)" onmouseup="this.blur()">next</a></p>
+        <a href="javascript:void (0)" onmousedown="app.cycleIllos2(&#39;back&#39;)" onmouseup="this.blur()">previous</a> •
+        <a href="javascript:void (0)" onmousedown="app.cycleIllos2(&#39;forward&#39;)" onmouseup="this.blur()">next</a></p>
       </div>
     </div>
-    <img src="./images/books/TheMAPasART1.jpg" id="illo1" onclick="displayImage(this.src)" style="position: absolute; left: 280px; top: 60px; width: 257px; height: 235px; border-width: 0px; z-index: 2; display: block;">
-    <img src="./images/books/TheMAPasART2.jpg" id="illo2" onclick="displayImage(this.src)" style="position: absolute; left: 560px; top: 60px; width: 240px; height: 108px; border-width: 0px; z-index: 1; display: block;">
+    <img id="illo1" onclick="app.displayImage(this.src)">
+    <img id="illo2" onclick="app.displayImage(this.src)">
     
-    <script language="javascript" type="text/javascript">
-    <!--
-    //BEGIN SCRIPT
-    //--------------------------------------------------------
-    if(pageName == "clients")
-    {
-    document.getElementById("contentPanel").style.backgroundColor = "#000000";
-    document.getElementById("cycleButtons").style.display = "none";
-    }
-    if(pageName == "bio" || pageName == "contact")
-    {
-    document.getElementById("cycleButtons").style.display = "none";
-    }
-    //--------------------------------------------------------
-    //END SCRIPT
-    //-->
-    </script>
     <!-- --------------------------------------------------------- -->
     <!--CAPTIONS-->
+    <div id='captions' class='caption'>
+      <p id='capTitle'></p>
+      <div id='capText'></div>
+      <p id='capPublisher'></p>
+    </div>
+    <!-- 00 -->
+    <!-- <div id="TheLivingBird" class="caption" style="position: absolute; left: 560px; top: 220px; width: 220px; z-index: 3; display: block;"><p><b>THE LIVING BIRD</b></p><p></p></div> -->
+    <!-- 01 -->
+    <!-- <div id="TheMapAsArt" class="caption" style="position: absolute; left: 560px; top: 220px; width: 220px; z-index: 3; display: none;"><p><b>THE MAP AS ART</b></p><p>Collection of contemporary art <br> exploring cartography</p><p>PRINCETON ARCHITECTURAL PRESS</p></div> -->
+    <!-- 02 -->
+    <!-- <div id="YouAreHere" class="caption" style="position:absolute; left:495px; top:270px; width:220px; z-index:3; display:none"><p><b>YOU ARE HERE</b></p><p>Book of maps of personal geography <br>and realms of fantasy</p><p>PRINCETON ARCHITECTURAL PRESS</p></div> -->
+    <!-- 03 -->
+    <!-- <div id="WhereWaterIsGold" class="caption" style="position:absolute; left:495px; top:270px; width:220px; z-index:3; display:none"><p><b>XXX</p><p>XXX</p></div> -->
+    <!-- 04 -->
+    <!-- <div id="Blackstock" class="caption" style="position: absolute; left: 475px; top: 305px; width: 220px; z-index: 3; display: none;"><p><b>BLACKSTOCK'S COLLECTION</b></p><p style="margin-bottom:5px;">Drawings of an autistic artist</p><p>2006 BEST IN SHOW Award<br>Publishers Association of the West</p><p>PRINCETON ARCHITECTURAL PRESS</p></div> -->
+    <!-- 05 -->
+    <!-- <div id="travels" class="caption" style="position: absolute; left: 550px; top: 220px; width: 220px; z-index: 3; display: none;"><p><b>TRAVELS TO THE EDGE</b></p><p>Awe-inspiring places, cultures and creatures,<br>captured by Art Wolfe, acclaimed photographer<br>and companion piece to 13-episode<br>public television series</p><p>MOUNTAINEERS BOOKS</p></div> -->
+    <!-- 06 -->
+    <!-- <div id="TheLastPolarBear" class="caption" style="position: absolute; left: 585px; top: 210px; width: 220px; z-index: 3; display: none;"><p><b>THE LAST POLAR BEAR</b></p><p>Photographs and essays connecting<br>the polar bear's uncertain future <br>and climate change</p><p>BRAIDED RIVER | MOUNTAINEERS BOOKS</p></div> -->
+    <!-- 07 -->
+    <!-- <div id="IceBear" class="caption" style="position: absolute; left: 585px; top: 210px; width: 220px; z-index: 3; display: none;"><p><b>ICE BEAR</b></p><p>Photographic portrait of the<br>polar bear’s Arctic home and life cycle</p><p>MOUNTAINEERS BOOKS</p></div> -->
+    <!-- 08 -->
+    <!-- <div id="SalmonInTheTrees" class="caption" style="position: absolute; left: 585px; top: 210px; width: 220px; z-index: 3; display: none;"><p><b>SALMON IN THE TREES</b></p><p>Story of the Tongass rain forest of Alaska,<br>one of the rarest ecosystems on Earth</p><p>BRAIDED RIVER/MOUNTAINEERS BOOKS</p></div> -->
+    <!-- 09 -->
+    <!-- <div id="OnArcticGround" class="caption" style="position: absolute; left: 585px; top: 210px; width: 220px; z-index: 3; display: none;"><p><b>ON ARCTIC GROUND</b></p><p>XXX<br>XXX</p><p>XXX</p></div> -->
+    <!-- 10 -->
+    <!-- <div id="PlanetIce" class="caption" style="position: absolute; left: 585px; top: 210px; width: 220px; z-index: 3; display: none;"><p><b>PLANET ICE</b></p><p style="margin-bottom:5px;">Photographic account of the<br>rapidly changing ice on Earth</p><p>2009 Atmospheric Science Librarians<br>International CHOICE AWARD</p><p>MOUNTAINEERS BOOKS</p></div> -->
+    <!-- 11 -->
+    <!-- <div id="Resurrection" class="caption" style="position: absolute; left: 560px; top: 220px; width: 220px; z-index: 3; display: none;"><p><b>RESURRECTION</b></p><p>A call for action in response to <br> Glen Canyon's reappearance from Lake Powell</p><p>BRAIDED RIVER/MOUNTAINEERS BOOKS</p></div> -->
+    <!-- 12 -->
+    <!-- <div id="ColumbiaHighlands" class="caption" style="position: absolute; left: 565px; top: 225px; width: 220px; z-index: 3; display: none;"><p><b>COLUMBIA HIGHLANDS</b></p><p>A celebration of the beauty and treasure <br> of northeastern Washington State</p><p>BRAIDED RIVER | MOUNTAINEERS BOOKS</p></div> -->
+    <!-- 13 -->
+    <!-- <div id="UpToNoGood" class="caption" style="position:absolute; left:550px; top:230px; width:200px; z-index:3; display:none"><p><b>UP TO NO GOOD</b></p><p>Collection of stories and photographs<br> of bad boys</p><p>CHRONICLE BOOKS</p></div> -->
+    <!-- 14 -->
+    <!-- <div id="CloserToWildness" class="caption" style="position: absolute; left: 560px; top: 220px; width: 220px; z-index: 3; display: none;"><p><b>CLOSER TO WILDNESS</b></p><p>XXX<br>XXX</p><p>XXX</p></div> -->
+    <!-- 15 -->
+    <!-- <div id="MacroPhotography" class="caption" style="position: absolute; left: 560px; top: 220px; width: 220px; z-index: 3; display: none;"><p><b>MACRO PHOTOGRAPHY</b></p><p>XXX<br>XXX</p><p>XXX</p></div> -->
+
+
+<!--     
+
     
-    <div id="TheMAPasART" class="caption" style="position: absolute; left: 560px; top: 220px; width: 220px; z-index: 3; display: block;"><p><b>THE MAP AS ART</b></p><p>Collection of contemporary art <br> exploring cartography</p><p>PRINCETON ARCHITECTURAL PRESS</p></div>
-    <div id="TheLastPolarBear" class="caption" style="position: absolute; left: 585px; top: 210px; width: 220px; z-index: 3; display: none;"><p><b>THE LAST POLAR BEAR</b></p><p>Photographs and essays connecting<br>the polar bear's uncertain future <br>and climate change</p><p>BRAIDED RIVER | MOUNTAINEERS BOOKS</p></div>
-    <div id="Resurrection" class="caption" style="position: absolute; left: 560px; top: 220px; width: 220px; z-index: 3; display: none;"><p><b>RESURRECTION</b></p><p>A call for action in response to <br> Glen Canyon's reappearance from Lake Powell</p><p>BRAIDED RIVER/MOUNTAINEERS BOOKS</p></div>
-    <div id="MacroPhotography" class="caption" style="position: absolute; left: 545px; top: 225px; width: 220px; z-index: 3; display: none;"><p><b>MACRO PHOTOGRAPHY</b></p><p>An accessible guide <br> to digital macro photography</p><p>TIMBER PRESS</p></div>
+    
     <div id="GreenHomePrimer" class="caption" style="position: absolute; left: 510px; top: 225px; width: 270px; z-index: 3; display: none;"><p><b>GREEN HOME PRIMER</b></p><p>Ideas for building, remodeling and buying green</p><p>TIMBER PRESS</p></div>
-    <div id="ColumbiaHighlands" class="caption" style="position: absolute; left: 565px; top: 225px; width: 220px; z-index: 3; display: none;"><p><b>COLUMBIA HIGHLANDS</b></p><p>A celebration of the beauty and treasure <br> of northeastern Washington State</p><p>BRAIDED RIVER | MOUNTAINEERS BOOKS</p></div>
+    
     <div id="Coleus" class="caption" style="position: absolute; left: 555px; top: 260px; width: 255px; z-index: 3; display: none;"><p><b>COLEUS</b></p><p>Guide to designing with and caring for coleus,<br>including an encyclopedia of 225 varieties</p><p>TIMBER PRESS</p></div>
-    <div id="watercover" class="caption" style="position: absolute; left: 540px; top: 250px; width: 215px; z-index: 3; display: none;"><p><b>BUY THIS BOOK</b></p><p>Book documenting the importance of access <br> to clean drinking water around the globe<br> (in development)</p><p>TRIBUTARY BOOKS</p></div>
+    <div id="BuyThisBook" class="caption" style="position: absolute; left: 540px; top: 250px; width: 215px; z-index: 3; display: none;"><p><b>BUY THIS BOOK</b></p><p>Book documenting the importance of access <br> to clean drinking water around the globe<br> (in development)</p><p>TRIBUTARY BOOKS</p></div>
     <div id="sleepingbabies" class="caption" style="position: absolute; left: 560px; top: 240px; width: 200px; z-index: 3; display: none;"><p><b>SLEEPING BABIES</b></p><p>A panacea for those who need to<br>relax a little (in development)</p><p>TRIBUTARY BOOKS</p></div>
-    <div id="blackstock" class="caption" style="position: absolute; left: 475px; top: 305px; width: 220px; z-index: 3; display: none;"><p><b>BLACKSTOCK'S COLLECTION</b></p><p style="margin-bottom:5px;">Drawings of an autistic artist</p><p>2006 BEST IN SHOW Award<br>Publishers Association of the West</p><p>PRINCETON ARCHITECTURAL PRESS</p></div>
-    <div id="youAreHere" class="caption" style="position:absolute; left:495px; top:270px; width:220px; z-index:3; display:none"><p><b>YOU ARE HERE</b></p><p>Book of maps of personal geography <br>and realms of fantasy</p><p>PRINCETON ARCHITECTURAL PRESS</p></div>
-    <div id="noGood" class="caption" style="position:absolute; left:550px; top:230px; width:200px; z-index:3; display:none"><p><b>UP TO NO GOOD</b></p><p>Collection of stories and photographs<br> of bad boys</p><p>CHRONICLE BOOKS</p></div>
+    
+    
     <div id="wildGlueGun" class="caption" style="position:absolute; left:540px; top:240px; width:250px; z-index:3; display:none"><p><b>WILD WITH A GLUE GUN</b></p><p>How-to book on starting a crafting group</p><p>NORTH LIGHT BOOKS</p></div>
     <div id="saveLastBall" class="caption" style="position:absolute; left:560px; top:200px; width:220px; z-index:3; display:none"><p><b>SAVE THE LAST BALL</b></p><p>Memories, photographs and essays<br> from owners celebrating passed dogs<br> (in development)</p><p>UNLEASHED BOOK DEVELOPMENT</p></div>
     <div id="showeredLove" class="caption" style="position:absolute; left:550px; top:260px; width:200px; z-index:3; display:none"><p><b>SHOWERED WITH LOVE</b></p><p>Unique and eclectic book about making <br>baby shower gifts (in development)</p><p>UNLEASHED BOOK DEVELOPMENT</p></div>
@@ -462,11 +289,11 @@
     <div id="containerInspiration" class="caption" style="position:absolute; left:520px; top:190px; width:250px; z-index:3; display:none"><p><b>CONTAINER INSPIRATION</b></p><p>Postcard series of container garden recipes</p><p>WELLS-MEDINA NURSERY</p></div>
     <div id="parentsChildren" class="caption" style="position:absolute; left:500px; top:240px; width:250px; z-index:3; display:none"><p><b>PARENT'S LIVES, CHILDREN'S NEEDS</b></p><p>Book offering advice on parenting effectively<br>through developmental stages</p><p>PERSONHOOD PRESS</p></div>
     <div id="potsGarden" class="caption" style="position:absolute; left:550px; top:260px; width:200px; z-index:3; display:none"><p><b>POTS IN THE GARDEN</b></p><p>Book of design and planting techniques<br> for using pots in the garden</p><p>TIMBER PRESS</p></div>
-    <div id="travels" class="caption" style="position: absolute; left: 550px; top: 220px; width: 220px; z-index: 3; display: none;"><p><b>TRAVELS TO THE EDGE</b></p><p>Awe-inspiring places, cultures and creatures,<br>captured by Art Wolfe, acclaimed photographer<br>and companion piece to 13-episode<br>public television series
-    </p><p>MOUNTAINEERS BOOKS</p></div>
-    <div id="IceBear" class="caption" style="position: absolute; left: 585px; top: 210px; width: 220px; z-index: 3; display: none;"><p><b>ICE BEAR</b></p><p>Photographic portrait of the<br>polar bear’s Arctic home and life cycle</p><p>MOUNTAINEERS BOOKS</p></div>
-    <div id="SalmonInTheTrees" class="caption" style="position: absolute; left: 585px; top: 210px; width: 220px; z-index: 3; display: none;"><p><b>SALMON IN THE TREES</b></p><p>Story of the Tongass rain forest of Alaska,<br>one of the rarest ecosystems on Earth</p><p>BRAIDED RIVER/MOUNTAINEERS BOOKS</p></div>
-    <div id="PlanetIce" class="caption" style="position: absolute; left: 585px; top: 210px; width: 220px; z-index: 3; display: none;"><p><b>PLANET ICE</b></p><p style="margin-bottom:5px;">Photographic account of the<br>rapidly changing ice on Earth</p><p>2009 Atmospheric Science Librarians<br>International CHOICE AWARD</p><p>MOUNTAINEERS BOOKS</p></div>
+
+    
+    
+    
+    
     <div id="RevolutionaryYardscape" class="caption" style="position:absolute; left:555px; top:230px; width:250px; z-index:3; display:none"><p><b>THE REVOLUTIONARY YARDSCAPE</b></p><p style="margin-bottom:5px;">Ideas for repurposing local materials<br>to create containers, pathways, and lighting</p><p>2011 GOLD MEDAL Design Winner<br>Garden Writer’s Association</p><p>TIMBER PRESS</p></div>
     <div id="UrbanPantry" class="caption" style="position: absolute; left: 550px; top: 240px; width: 195px; z-index: 3; display: none;"><p><b>URBAN PANTRY</b></p><p>Guide to making better use of kitchen,<br>garden and time for the modern audience</p><p>SKIPSTONE PRESS</p></div>
     <div id="EdibleHeirlooms" class="caption" style="position: absolute; left: 550px; top: 250px; width: 220px; z-index: 3; display: none;"><p><b>EDIBLE HEIRLOOMS</b></p><p>Guide to growing heritage vegetables<br>for the maritime garden</p><p>MOUNTAINEERS BOOKS</p></div>
@@ -477,17 +304,18 @@
     <div id="FromTreeToTable" class="caption" style="position:absolute; left:550px; top:270px; width:220px; z-index:3; display:none"><p><b>FROM TREE TO TABLE</b></p><p>Guide to growing backyard fruit tress<br>in the Pacific maritime climate</p><p>MOUNTAINEERS BOOKS</p></div>
     <div id="PacificFeast" class="caption" style="position:absolute; left:550px; top:270px; width:220px; z-index:3; display:none"><p><b>PACIFIC FEAST</b></p><p>Book highlighting the sustainable<br>native bounty of the West Coast</p><p>SKIPSTONE PRESS</p></div>
     <div id="CompleteChiliPepperBook" class="caption" style="position:absolute; left:550px; top:230px; width:250px; z-index:3; display:none"><p><b>THE COMPLETE CHILI PEPPER BOOK</b></p><p>Comprehensive guide to choosing, growing,<br>preserving, and cooking chili peppers</p><p>TIMBER PRESS</p></div>
-    <div id="NoBetterTime" class="caption" style="position:absolute; left:550px; top:230px; width:270px; z-index:3; display:none"><p><b>NO BETTER TIME</b></p><p>A guide to international aid and development<br>to help readers make decisions about donating,<br>volunteering, and advocacy</p><p>TRIBUTARY BOOKS</p></div>
+    <div id="NoBetterTime" class="caption" style="position:absolute; left:550px; top:230px; width:270px; z-index:3; display:none"><p><b>NO BETTER TIME</b></p><p>A guide to international aid and development<br>to help readers make decisions about donating,<br>volunteering, and advocacy</p><p>TRIBUTARY BOOKS</p></div> -->
     <!-- CAPTIONS-->
     <!-- --------------------------------------------------------- -->
     <!-- contentPanel end div -->
   </div>
   <div id="imageOverlay" style="display:none;">
-    <center onclick="killImage()"><img src="./images/white.jpg" id="overlayImage" style="top:30px; border-width:0px; display:block; cursor:pointer"><p style="cursor:pointer; text-align:center; font-size:11px; margin-top:15px;">
+    <center onclick="app.killImage()"><img src="./images/white.jpg" id="overlayImage" style="top:30px; border-width:0px; display:block; cursor:pointer"><p style="cursor:pointer; text-align:center; font-size:11px; margin-top:15px;">
     RETURN</p><p>
   </p></center>
 </div>
 <script language="javascript" type="text/javascript">
-setButtons();
+  app.setButtons();
+  app.loadImage2();
 </script>
 </body></html>
