@@ -4,11 +4,12 @@
     <title>Jigsaw Design, Seattle | Misc</title>
     <link rel="stylesheet" type="text/css" href="./css/jigsawstyles.css" media="all">
     <title>misc</title>
+    <script language="javascript" type="text/javascript" src="./js/jigsawjavascript.js"></script>
     <script language="javascript" type="text/javascript">
     <!--
     //BEGIN SCRIPT
     //--------------------------------------------------------
-    var pageName = "misc";
+    app.pageName = "misc";
     var layouts = new Array();
     layouts[0]=
     {
@@ -176,7 +177,7 @@
     //END SCRIPT
     //-->
     </script>
-    <script language="javascript" type="text/javascript" src="./js/jigsawjavascript.js"></script>
+
   </head>
 <body onload="app.loadImage();">
   <div id="buttonPanel">
@@ -201,23 +202,6 @@
     <img src="./images/misc/00_engineering2.jpg" id="illo2" onclick="app.displayImage(this.src)" style="position: absolute; left: 520px; top: 60px; width: 200px; height: 259px; border-width: 0px; z-index: 1; display: block;">
     <img src="" id="illo3" onclick="app.displayImage(this.src)" style="position: absolute; left: 520px; top: 60px; width: 200px; height: 259px; border-width: 0px; z-index: 1; display: none;">
     
-    <script language="javascript" type="text/javascript">
-    <!--
-    //BEGIN SCRIPT
-    //--------------------------------------------------------
-    if(pageName == "clients")
-    {
-    document.getElementById("contentPanel").style.backgroundColor = "#000000";
-    document.getElementById("cycleButtons").style.display = "none";
-    }
-    if(pageName == "bio" || pageName == "contact")
-    {
-    document.getElementById("cycleButtons").style.display = "none";
-    }
-    //--------------------------------------------------------
-    //END SCRIPT
-    //-->
-    </script>
     <!-- --------------------------------------------------------- -->
     <!--CAPTIONS-->
     <div id="engineering" class="caption" style="position: absolute; left: 520px; top: 330px; width: 220px; z-index: 3; display: block;"><p>Quarterly newsletter for the<br> College of Engineering </p><p>MICHIGAN TECH UNIVERSITY</p></div>

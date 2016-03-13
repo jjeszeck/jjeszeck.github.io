@@ -4,11 +4,12 @@
     <title>Jigsaw Design, Seattle | Web</title>
     <link rel="stylesheet" type="text/css" href="./css/jigsawstyles.css" media="all">
     <title>web</title>
+    <script language="javascript" type="text/javascript" src="./js/jigsawjavascript.js"></script>
     <script language="javascript" type="text/javascript">
     <!--
     //BEGIN SCRIPT
     //--------------------------------------------------------
-    var pageName = "web";
+    app.pageName = "web";
     var layouts = new Array();
     layouts[0]=
     {
@@ -35,7 +36,7 @@
     //END SCRIPT
     //-->
     </script>
-    <script language="javascript" type="text/javascript" src="./js/jigsawjavascript.js"></script>
+    
   </head>
 <body onload="app.loadImage();">
   <div id="buttonPanel">
@@ -59,23 +60,7 @@
     <img src="./images/web/cafeLago1.jpg" id="illo1" onclick="app.displayImage(this.src)" style="position: absolute; left: 280px; top: 30px; width: 261px; height: 165px; border-width: 0px; z-index: 2; display: block;">
     <img src="./images/web/cafeLago2.jpg" id="illo2" onclick="app.displayImage(this.src)" style="position: absolute; left: 280px; top: 210px; width: 262px; height: 165px; border-width: 0px; z-index: 1; display: block;">
     <img src="./images/web/cafeLago3.jpg" id="illo3" onclick="app.displayImage(this.src)" style="position: absolute; left: 560px; top: 30px; width: 262px; height: 165px; border-width: 0px; z-index: 2; display: block;">
-    <script language="javascript" type="text/javascript">
-    <!--
-    //BEGIN SCRIPT
-    //--------------------------------------------------------
-    if(pageName == "clients")
-    {
-    document.getElementById("contentPanel").style.backgroundColor = "#000000";
-    document.getElementById("cycleButtons").style.display = "none";
-    }
-    if(pageName == "bio" || pageName == "contact")
-    {
-    document.getElementById("cycleButtons").style.display = "none";
-    }
-    //--------------------------------------------------------
-    //END SCRIPT
-    //-->
-    </script>
+
     <!-- --------------------------------------------------------- -->
     <!--CAPTIONS-->
     <div id="cafeLago" class="caption" style="position: absolute; left: 560px; top: 350px; width: 200px; z-index: 3; display: block;"><p>Website for Cafe Lago,<br> an Italian restaurant in Seattle</p></div>
