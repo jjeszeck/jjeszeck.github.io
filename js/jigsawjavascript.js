@@ -95,6 +95,7 @@
           if (i <= image_count) {
             two_digit_number = ('0' + this.txtNum).slice(-2);
             document.getElementById("illo" + i).style.visibility = 'visible';
+            document.getElementById("illo" + i).style.height = '';
             document.getElementById("illo" + i).src = "" + this.image_prefix + two_digit_number + "_" + slug + i + ".jpg";
           } else {
             document.getElementById("illo" + i).style.visibility = 'hidden';

@@ -117,6 +117,7 @@ window.app =
         if i <= image_count
           two_digit_number = ('0'+@txtNum).slice(-2)
           document.getElementById("illo#{i}").style.visibility = 'visible'
+          document.getElementById("illo#{i}").style.height = ''
           document.getElementById("illo#{i}").src = "#{@image_prefix}#{two_digit_number}_#{slug}#{i}.jpg"
 
         else
