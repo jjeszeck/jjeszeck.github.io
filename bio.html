@@ -4,11 +4,12 @@
     <title>Jigsaw Design, Seattle | Bio</title>
     <link rel="stylesheet" type="text/css" href="./css/jigsawstyles.css" media="all">
     <title>bio</title>
+    <script language="javascript" type="text/javascript" src="./js/jigsawjavascript.js"></script>
     <script language="javascript" type="text/javascript">
     <!--
     //BEGIN SCRIPT
     //--------------------------------------------------------
-    var pageName = "bio";
+    app.pageName = "bio";
     var layouts = new Array();
     layouts[0]=
     {
@@ -22,7 +23,7 @@
     //END SCRIPT
     //-->
     </script>
-    <script language="javascript" type="text/javascript" src="./js/jigsawjavascript.js"></script>
+    
   </head>
   <body onload="app.loadImage();">
     <div id="buttonPanel">
@@ -51,15 +52,8 @@
       <!--
       //BEGIN SCRIPT
       //--------------------------------------------------------
-      if(pageName == "clients")
-      {
-      document.getElementById("contentPanel").style.backgroundColor = "#000000";
-      document.getElementById("cycleButtons").style.display = "none";
-      }
-      if(pageName == "bio" || pageName == "contact")
-      {
-      document.getElementById("cycleButtons").style.display = "none";
-      }
+      if(app.pageName == "bio" || app.pageName == "contact")
+      {document.getElementById("cycleButtons").style.display = "none";}
       //--------------------------------------------------------
       //END SCRIPT
       //-->

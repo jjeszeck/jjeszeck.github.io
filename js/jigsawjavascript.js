@@ -10,7 +10,7 @@
       i = 0;
       while (i < this.navButName.length) {
         if (document.images[this.navButName[i]]) {
-          if (this.navButName[i] === pageName) {
+          if (this.navButName[i] === this.pageName) {
             document.images[this.navButName[i]].src = 'images/button/' + this.navButName[i] + '2.jpg';
           } else {
             document.images[this.navButName[i]].src = 'images/button/' + this.navButName[i] + '0.jpg';
@@ -21,7 +21,7 @@
     },
     changeButton: function(bName, bNum) {
       this.setButtons();
-      if (bName !== pageName) {
+      if (bName !== this.pageName) {
         document.images[bName].src = 'images/button/' + bName + bNum + '.jpg';
       }
     },
@@ -75,16 +75,16 @@
     },
     loadImage2: function() {
       var capPublisher, capText, capTitle, capTxt, i, image_count, publisher, slug, text, text1, text2, text3, title, two_digit_number, _i;
-      if (layoutsLoaded) {
-        capTxt = layouts[this.txtNum].name;
-        title = layouts[this.txtNum].title;
-        slug = layouts[this.txtNum].slug;
-        text = '<p>' + layouts[this.txtNum].text.join('</p><p>') + '</p>';
-        text1 = layouts[this.txtNum].text1;
-        text2 = layouts[this.txtNum].text2;
-        text3 = layouts[this.txtNum].text3;
-        publisher = layouts[this.txtNum].publisher;
-        image_count = layouts[this.txtNum].image_count;
+      if (this.layoutsLoaded) {
+        capTxt = this.layouts[this.txtNum].name;
+        title = this.layouts[this.txtNum].title;
+        slug = this.layouts[this.txtNum].slug;
+        text = '<p>' + this.layouts[this.txtNum].text.join('</p><p>') + '</p>';
+        text1 = this.layouts[this.txtNum].text1;
+        text2 = this.layouts[this.txtNum].text2;
+        text3 = this.layouts[this.txtNum].text3;
+        publisher = this.layouts[this.txtNum].publisher;
+        image_count = this.layouts[this.txtNum].image_count;
         capTitle = document.getElementById('capTitle');
         capText = document.getElementById('capText');
         capPublisher = document.getElementById('capPublisher');
@@ -94,30 +94,17 @@
         for (i = _i = 1; _i <= 2; i = _i += 1) {
           if (i <= image_count) {
             two_digit_number = ('0' + this.txtNum).slice(-2);
-            document.getElementById("illo" + i).style.display = 'block';
+            document.getElementById("illo" + i).style.visibility = 'visible';
             document.getElementById("illo" + i).src = "" + this.image_prefix + two_digit_number + "_" + slug + i + ".jpg";
           } else {
-            document.getElementById("illo" + i).style.display = 'none';
+            document.getElementById("illo" + i).style.visibility = 'hidden';
+            document.getElementById("illo" + i).style.height = '150px';
             document.getElementById("illo" + i).src = '';
           }
         }
       }
     },
     clearImages: function() {
-      if (layouts[this.txtNum].srcIllo1) {
-        document.getElementById('illo1').style.display = 'none';
-        document.getElementById('illo1').src = './images/yellow.jpg';
-      }
-      if (layouts[this.txtNum].srcIllo2) {
-        document.getElementById('illo2').style.display = 'none';
-        document.getElementById('illo2').src = './images/yellow.jpg';
-      }
-      if (layouts[this.txtNum].srcIllo3) {
-        document.getElementById('illo3').style.display = 'none';
-        document.getElementById('illo3').src = './images/yellow.jpg';
-      }
-    },
-    clearImages2: function() {
       if (layouts[this.txtNum].srcIllo1) {
         document.getElementById('illo1').style.display = 'none';
         document.getElementById('illo1').src = './images/yellow.jpg';
@@ -160,8 +147,7 @@
     },
     cycleIllos2: function(direction) {
       var layoutsLength;
-      this.clearImages2();
-      layoutsLength = layouts.length;
+      layoutsLength = this.layouts.length;
       if (direction === 'forward') {
         this.txtNum++;
         if (this.txtNum >= layoutsLength) {

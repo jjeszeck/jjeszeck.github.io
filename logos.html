@@ -4,11 +4,12 @@
     <title>Jigsaw Design, Seattle | Logos</title>
     <link rel="stylesheet" type="text/css" href="./css/jigsawstyles.css" media="all">
     <title>logos</title>
+    <script language="javascript" type="text/javascript" src="./js/jigsawjavascript.js"></script>
     <script language="javascript" type="text/javascript">
     <!--
     //BEGIN SCRIPT
     //--------------------------------------------------------
-    var pageName = "logos";
+    app.pageName = "logos";
     var layouts = new Array();
     
     layouts[0]={name:"seattleKnife", widthIllo1:"250px", srcIllo1:"./images/logos/00_SeattleKnife.png"}
@@ -27,7 +28,7 @@
     //END SCRIPT
     //-->
     </script>
-    <script language="javascript" type="text/javascript" src="./js/jigsawjavascript.js"></script>
+    
   </head>
   <body onload="app.loadImage();">
     <div id="buttonPanel">
@@ -51,23 +52,6 @@
       <div id='imagePanel'>
         <img src="./images/logos/00_SeattleKnife.png" id="illo1" onclick="app.displayImage(this.src)" style="width: 250px; z-index: 2;">
         <img id="illo2" onclick="app.displayImage(this.src)" style="z-index: 1; display: none;">
-        <script language="javascript" type="text/javascript">
-        <!--
-        //BEGIN SCRIPT
-        //--------------------------------------------------------
-        if(pageName == "clients")
-        {
-        document.getElementById("contentPanel").style.backgroundColor = "#000000";
-        document.getElementById("cycleButtons").style.display = "none";
-        }
-        if(pageName == "bio" || pageName == "contact")
-        {
-        document.getElementById("cycleButtons").style.display = "none";
-        }
-        //--------------------------------------------------------
-        //END SCRIPT
-        //-->
-        </script>
         <!-- --------------------------------------------------------- -->
         <!--CAPTIONS-->
         <div id="seattleKnife" class="caption" style="z-index:3;"><p style="text-align:center;">Knife sharpening and supplier</p></div>
@@ -84,7 +68,7 @@
         <!-- CAPTIONS-->
         <!-- --------------------------------------------------------- -->
         <!-- contentPanel end div -->
-        </div>
+      </div>
     </div>
     <div id="imageOverlay" style="display:none;">
       <center onclick="app.killImage()"><img src="./images/white.jpg" id="overlayImage" style="top:30px; border-width:0px; display:block; cursor:pointer"><p style="cursor:pointer; text-align:center; font-size:11px; margin-top:15px;">
@@ -94,5 +78,5 @@
   <script language="javascript" type="text/javascript">
   app.setButtons();
   </script>
-  </body>
+</body>
 </html>

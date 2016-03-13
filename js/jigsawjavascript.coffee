@@ -27,7 +27,7 @@ window.app =
     i = 0
     while i < @navButName.length
       if document.images[@navButName[i]]
-        if @navButName[i] == pageName
+        if @navButName[i] == @pageName
           document.images[@navButName[i]].src = 'images/button/' + @navButName[i] + '2.jpg'
         else
           document.images[@navButName[i]].src = 'images/button/' + @navButName[i] + '0.jpg'
@@ -36,7 +36,7 @@ window.app =
 
   changeButton: (bName, bNum) ->
     @setButtons()
-    if bName != pageName
+    if bName != @pageName
       document.images[bName].src = 'images/button/' + bName + bNum + '.jpg'
     return
 
@@ -94,16 +94,16 @@ window.app =
 
   loadImage2: ->
     # title, slug, text1, text2, text3, publisher, image_count
-    if layoutsLoaded
-      capTxt = layouts[@txtNum].name
-      title = layouts[@txtNum].title
-      slug = layouts[@txtNum].slug
-      text = '<p>'+layouts[@txtNum].text.join('</p><p>')+'</p>'
-      text1 = layouts[@txtNum].text1
-      text2 = layouts[@txtNum].text2
-      text3 = layouts[@txtNum].text3
-      publisher = layouts[@txtNum].publisher
-      image_count = layouts[@txtNum].image_count
+    if @layoutsLoaded
+      capTxt = @layouts[@txtNum].name
+      title = @layouts[@txtNum].title
+      slug = @layouts[@txtNum].slug
+      text = '<p>'+@layouts[@txtNum].text.join('</p><p>')+'</p>'
+      text1 = @layouts[@txtNum].text1
+      text2 = @layouts[@txtNum].text2
+      text3 = @layouts[@txtNum].text3
+      publisher = @layouts[@txtNum].publisher
+      image_count = @layouts[@txtNum].image_count
 
       capTitle = document.getElementById('capTitle')
       capText = document.getElementById('capText')
@@ -116,24 +116,13 @@ window.app =
       for i in [1..2] by 1
         if i <= image_count
           two_digit_number = ('0'+@txtNum).slice(-2)
-          document.getElementById("illo#{i}").style.display = 'block'
+          document.getElementById("illo#{i}").style.visibility = 'visible'
           document.getElementById("illo#{i}").src = "#{@image_prefix}#{two_digit_number}_#{slug}#{i}.jpg"
-        else
-          document.getElementById("illo#{i}").style.display = 'none'
-          document.getElementById("illo#{i}").src = ''
 
-      # if @crappyBrowser
-      #   setTimeout 'setIllustration(1)', 500
-      #   if layouts[@txtNum].srcIllo2
-      #     setTimeout 'setIllustration(2)', 1000
-      #     if layouts[@txtNum].srcIllo3
-      #       setTimeout 'setIllustration(3)', 1500
-      # else
-      #   @setIllustration 1
-      #   if layouts[@txtNum].srcIllo2
-      #     @setIllustration 2
-      #     if layouts[@txtNum].srcIllo3
-      #       @setIllustration 3
+        else
+          document.getElementById("illo#{i}").style.visibility = 'hidden'
+          document.getElementById("illo#{i}").style.height = '150px'
+          document.getElementById("illo#{i}").src = ''
     return
 
   # Setting the images to yellow jpgs between changes
@@ -143,18 +132,6 @@ window.app =
   # stretch out weirdly before changing to the new one.
 
   clearImages: ->
-    if layouts[@txtNum].srcIllo1
-      document.getElementById('illo1').style.display = 'none'
-      document.getElementById('illo1').src = './images/yellow.jpg'
-    if layouts[@txtNum].srcIllo2
-      document.getElementById('illo2').style.display = 'none'
-      document.getElementById('illo2').src = './images/yellow.jpg'
-    if layouts[@txtNum].srcIllo3
-      document.getElementById('illo3').style.display = 'none'
-      document.getElementById('illo3').src = './images/yellow.jpg'
-    return
-
-  clearImages2: ->
     if layouts[@txtNum].srcIllo1
       document.getElementById('illo1').style.display = 'none'
       document.getElementById('illo1').src = './images/yellow.jpg'
@@ -190,8 +167,7 @@ window.app =
     return
 
   cycleIllos2: (direction) ->
-    @clearImages2()
-    layoutsLength = layouts.length
+    layoutsLength = @layouts.length
     if direction == 'forward'
       @txtNum++
       if @txtNum >= layoutsLength
