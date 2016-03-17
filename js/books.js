@@ -8,7 +8,7 @@
       slug: 'TheLivingBird',
       text: ['Visual and experiential journey of the century-long work by the Cornell Lab of Ornithology'],
       publisher: 'MOUNTAINEERS BOOKS',
-      image_count: 1
+      image_count: 2
     }, {
       title: 'THE MAP AS ART',
       slug: 'TheMapAsArt',
@@ -26,7 +26,7 @@
       slug: 'WhereWaterIsGold',
       text: ['Book illuminating the national treasure that is Bristol Bay, Alaska'],
       publisher: 'BRAIDED RIVER',
-      image_count: 1
+      image_count: 2
     }, {
       title: 'BLACKSTOCK\'S COLLECTIONS',
       slug: 'BlackstocksCollections',
@@ -62,7 +62,7 @@
       slug: 'OnArcticGround',
       text: ['Platform to raise awareness for preserving significant areas in the Arctic National Petroleum Reserve'],
       publisher: 'BRAIDED RIVER',
-      image_count: 1
+      image_count: 2
     }, {
       title: 'PLANET ICE',
       slug: 'PlanetIce',
@@ -92,7 +92,7 @@
       slug: 'CloserToWildness',
       text: ['Collection of art and musings of Irene Hardwicke Olivieri'],
       publisher: '',
-      image_count: 1
+      image_count: 2
     }, {
       title: 'MACRO PHOTOGRAPHY FOR GARDENERS AND NATURE LOVERS',
       slug: 'MacroPhotography',
@@ -104,19 +104,19 @@
       slug: 'SageSpirit',
       text: ['Insight into the health of an ecosystem on which greater sage grouse depend'],
       publisher: 'BRAIDED RIVER',
-      image_count: 1
+      image_count: 2
     }, {
       title: 'THE WILDEST ROCKIES',
       slug: 'TheWildestRockies',
       text: ['Celebration of northern Montana and southern Alberta, known as the “crown of the continent” '],
       publisher: 'BRAIDED RIVER',
-      image_count: 1
+      image_count: 2
     }, {
       title: 'EVEREST: THE WEST RIDGE',
       slug: 'EverestWestRidge',
       text: ['Special anniversary edition to commemorate the 50th anniversary of the first ascent of Mount Everest via the West Ridge'],
       publisher: 'MOUNTAINEERS BOOKS',
-      image_count: 1
+      image_count: 2
     }, {
       title: 'REAL GARDENS GROW NATIVES',
       slug: 'RealGardens',
@@ -146,7 +146,7 @@
       slug: 'FoodGrownRight',
       text: ['How-to book on building a garden from the ground up'],
       publisher: 'SKIPSTONE PRESS',
-      image_count: 1
+      image_count: 2
     }, {
       title: 'THE FRONT YARD FORAGER',
       slug: 'FrontYardForager',
@@ -176,7 +176,7 @@
       slug: 'GrowingMidwestGarden',
       text: ['Encyclopedic guide to plants specifically suited to the heartland'],
       publisher: 'TIMBER PRESS',
-      image_count: 1
+      image_count: 2
     }, {
       title: 'THE GUIDE TO WEST COAST CHEESE',
       slug: 'WestCoastCheese',
@@ -224,7 +224,7 @@
       slug: 'PromiscuousPlants',
       text: ['Guide to plants that spread, self-sow, and overwinter'],
       publisher: 'TIMBER PRESS',
-      image_count: 1
+      image_count: 2
     }, {
       title: 'SAVE THE LAST BALL',
       slug: 'SaveLastBall',
@@ -236,7 +236,7 @@
       slug: 'BackyardRoots',
       text: ['An inspiring book featuring 35 urban farmers from Northern California, Oregon, Washington and British Columbia'],
       publisher: 'SKIPSTONE PRESS',
-      image_count: 1
+      image_count: 2
     }, {
       title: 'FROM TREE TO TABLE',
       slug: 'FromTreeToTable',
@@ -254,7 +254,7 @@
       slug: 'BearCountry',
       text: ['Gift book featuring 125 full-color photographs of bears'],
       publisher: 'UNLEASHED BOOK DEVELOPMENT',
-      image_count: 1
+      image_count: 2
     }, {
       title: 'EXPECTANT NUDE',
       slug: 'ExpectantNude',
