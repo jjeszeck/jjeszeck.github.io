@@ -124,7 +124,7 @@ app.layouts = [
     slug: 'RealGardens'
     text: [ 'Accessible yet comprehensive advice to integrate natives, edibles, and nonnative ornamentals in your garden' ]
     publisher: 'SKIPSTONE PRESS'
-    image_count: 1
+    image_count: 2
   ,
     title: 'THE REVOLUTIONARY YARDSCAPE'
     slug: 'TheRevolutionaryYardscape'
@@ -157,13 +157,13 @@ app.layouts = [
     slug: 'FrontYardForager'
     text: ['Field guide and recipe book showcasing readily found edible urban weeds']
     publisher: 'SKIPSTONE PRESS'
-    image_count: 1
+    image_count: 2
   ,
     title: 'CITY GOATS'
     slug: 'CityGoats'
     text: ['How-to and benefits of keeping and raising milking goats on your city lot']
     publisher: 'SKIPSTONE PRESS'
-    image_count: 1
+    image_count: 2
   ,
     title: 'POTS IN THE GARDEN'
     slug: 'PotsGarden'
@@ -277,7 +277,7 @@ app.layouts = [
     slug: 'DialogueDoctor'
     text: ['Q & A in lay person’s terms about cold and flu<br>(in development)']
     publisher: 'TRIBUTARY BOOKS'
-    image_count: 1
+    image_count: 2
   ,
     title: 'THE NORTHWEST GREEN HOME PRIMER'
     slug: 'GreenHomePrimer'

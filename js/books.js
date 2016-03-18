@@ -6,44 +6,44 @@
     {
       title: 'THE LIVING BIRD',
       slug: 'TheLivingBird',
-      text: ['Visual and experiential journey of the century-long work by the Cornell Lab of Ornithology'],
+      text: ['Visual and experiential journey of the century-long<br>work by the Cornell Lab of Ornithology'],
       publisher: 'MOUNTAINEERS BOOKS',
       image_count: 2
     }, {
       title: 'THE MAP AS ART',
       slug: 'TheMapAsArt',
-      text: ['Collection of contemporary art exploring cartography'],
+      text: ['Collection of contemporary art<br>exploring cartography'],
       publisher: 'PRINCETON ARCHITECTURAL PRESS',
       image_count: 2
     }, {
       title: 'YOU ARE HERE',
       slug: 'YouAreHere',
-      text: ['Book of maps of personal geography and realms of fantasy'],
+      text: ['Maps of personal geography<br>and realms of fantasy'],
       publisher: 'PRINCETON ARCHITECTURAL PRESS',
       image_count: 2
     }, {
       title: 'WHERE WATER IS GOLD',
       slug: 'WhereWaterIsGold',
-      text: ['Book illuminating the national treasure that is Bristol Bay, Alaska'],
+      text: ['Book illuminating the national treasure<br>that is Bristol Bay, Alaska'],
       publisher: 'BRAIDED RIVER',
       image_count: 2
     }, {
       title: 'BLACKSTOCK\'S COLLECTIONS',
       slug: 'BlackstocksCollections',
-      text: ['Drawings of an autistic artist', '2006 BEST IN SHOW Award Publishers Association of the West'],
+      text: ['Drawings of an autistic artist', '2006 BEST IN SHOW Award Winner<br>Publishers Association of the West'],
       publisher: 'PRINCETON ARCHITECTURAL PRESS',
       image_count: 2
     }, {
       title: 'TRAVELS TO THE EDGE',
       slug: 'TravelsToTheEdge',
-      text: ['Awe-inspiring places, cultures and creatures, captured by Art Wolfe, acclaimed photographer and companion piece to 13-episode public television series'],
+      text: ['Awe-inspiring places, cultures and creatures, captured by Art Wolfe', 'Companion piece to 13-episode public television series'],
       publisher: 'MOUNTAINEERS BOOKS',
       image_count: 2
     }, {
       title: 'THE LAST POLAR BEAR',
       slug: 'TheLastPolarBear',
       text: ['Photographs and essays connecting the polar bear\'s uncertain future and climate change'],
-      publisher: 'BRAIDED RIVER | MOUNTAINEERS BOOKS',
+      publisher: 'BRAIDED RIVER',
       image_count: 2
     }, {
       title: 'ICE BEAR',
@@ -54,32 +54,32 @@
     }, {
       title: 'SALMON IN THE TREES',
       slug: 'SalmonInTheTrees',
-      text: ['Story of the Tongass rain forest of Alaska, one of the rarest ecosystems on Earth'],
-      publisher: 'BRAIDED RIVER/MOUNTAINEERS BOOKS',
+      text: ['Story of the Tongass rain forest of Alaska<br>one of the rarest ecosystems on Earth'],
+      publisher: 'BRAIDED RIVER',
       image_count: 2
     }, {
       title: 'ON ARCTIC GROUND',
       slug: 'OnArcticGround',
-      text: ['Platform to raise awareness for preserving significant areas in the Arctic National Petroleum Reserve'],
+      text: ['Platform to raise awareness<br>for preserving significant areas<br>in the Arctic National Petroleum Reserve'],
       publisher: 'BRAIDED RIVER',
       image_count: 2
     }, {
       title: 'PLANET ICE',
       slug: 'PlanetIce',
-      text: ['Photographic account of the rapidly changing ice on Earth', '2009 Atmospheric Science Librarians International CHOICE AWARD'],
-      publisher: 'MOUNTAINEERS BOOKS',
+      text: ['Photographic account of the rapidly changing<br>ice on Earth', '2009 CHOICE AWARD<br>Atmospheric Science Librarians International'],
+      publisher: 'Braided River',
       image_count: 2
     }, {
       title: 'RESURRECTION',
       slug: 'Resurrection',
       text: ['A call for action in response to Glen Canyon\'s reappearance from Lake Powell'],
-      publisher: 'BRAIDED RIVER/MOUNTAINEERS BOOKS',
+      publisher: 'BRAIDED RIVER',
       image_count: 2
     }, {
       title: 'COLUMBIA HIGHLANDS',
       slug: 'ColumbiaHighlands',
-      text: ['A celebration of the beauty and treasure of northeastern Washington State'],
-      publisher: 'BRAIDED RIVER | MOUNTAINEERS BOOKS',
+      text: ['A celebration of the beauty and treasure<br>of northeastern Washington State'],
+      publisher: 'BRAIDED RIVER',
       image_count: 2
     }, {
       title: 'UP TO NO GOOD',
@@ -90,43 +90,43 @@
     }, {
       title: 'CLOSER TO WILDNESS',
       slug: 'CloserToWildness',
-      text: ['Collection of art and musings of Irene Hardwicke Olivieri'],
+      text: ['Collection of art and musings<br>of Irene Hardwicke Olivieri'],
       publisher: '',
       image_count: 2
     }, {
-      title: 'MACRO PHOTOGRAPHY FOR GARDENERS AND NATURE LOVERS',
+      title: 'MACRO PHOTOGRAPHY',
       slug: 'MacroPhotography',
-      text: ['Guidebook to photographing plant life up close'],
+      text: ['Guide to photographing plant life up close'],
       publisher: 'TIMBER PRESS',
       image_count: 2
     }, {
       title: 'SAGE SPIRIT',
       slug: 'SageSpirit',
-      text: ['Insight into the health of an ecosystem on which greater sage grouse depend'],
+      text: ['Insight into the health of an ecosystem<br>on which greater sage grouse depend'],
       publisher: 'BRAIDED RIVER',
       image_count: 2
     }, {
       title: 'THE WILDEST ROCKIES',
       slug: 'TheWildestRockies',
-      text: ['Celebration of northern Montana and southern Alberta, known as the “crown of the continent” '],
+      text: ['Celebration of northern Montana<br>and southern Alberta, known<br>as the “Crown of the Continent” '],
       publisher: 'BRAIDED RIVER',
       image_count: 2
     }, {
       title: 'EVEREST: THE WEST RIDGE',
       slug: 'EverestWestRidge',
-      text: ['Special anniversary edition to commemorate the 50th anniversary of the first ascent of Mount Everest via the West Ridge'],
+      text: ['Special anniversary edition to commemorate<br>the 50th anniversary of the first ascent<br>of Mount Everest via the West Ridge'],
       publisher: 'MOUNTAINEERS BOOKS',
       image_count: 2
     }, {
       title: 'REAL GARDENS GROW NATIVES',
       slug: 'RealGardens',
-      text: ['Accessible yet comprehensive advice to integrate natives, edibles, and nonnative ornamentals in your garden'],
-      publisher: 'SKIPSTONE PRESS',
+      text: ['Accessible yet comprehensive advice<br>for integrating natives, edibles,<br>and non-native ornamentals in your garden'],
+      publisher: 'SKIPSTONE',
       image_count: 1
     }, {
       title: 'THE REVOLUTIONARY YARDSCAPE',
       slug: 'TheRevolutionaryYardscape',
-      text: ['Ideas for repurposing local materials to create containers, pathways, and lighting', '2011 GOLD MEDAL Design Winner<br>Garden Writer\'s Association'],
+      text: ['Ideas for repurposing local materials<br>to create containers, pathways, and lighting', '2011 GOLD MEDAL Design Winner<br>Garden Writer\'s Association'],
       publisher: 'TIMBER PRESS',
       image_count: 2
     }, {
@@ -144,29 +144,29 @@
     }, {
       title: 'FOOD GROWN RIGHT, IN YOUR BACKYARD',
       slug: 'FoodGrownRight',
-      text: ['How-to book on building a garden from the ground up'],
-      publisher: 'SKIPSTONE PRESS',
+      text: ['Guide to building a garden from<br>the ground up'],
+      publisher: 'SKIPSTONE',
       image_count: 2
     }, {
       title: 'THE FRONT YARD FORAGER',
       slug: 'FrontYardForager',
-      text: ['Field guide and recipe book showcasing readily found edible urban weeds'],
-      publisher: 'SKIPSTONE PRESS',
+      text: ['Field guide and recipe book showcasing<br>readily found edible urban weeds'],
+      publisher: 'SKIPSTONE',
       image_count: 1
     }, {
       title: 'CITY GOATS',
       slug: 'CityGoats',
       text: ['How-to and benefits of keeping and raising milking goats on your city lot'],
-      publisher: 'SKIPSTONE PRESS',
+      publisher: 'SKIPSTONE',
       image_count: 1
     }, {
       title: 'POTS IN THE GARDEN',
       slug: 'PotsGarden',
-      text: ['Book of design and planting techniques for using pots in the garden'],
+      text: ['Design and planting techniques<br>for using pots in the garden'],
       publisher: 'TIMBER PRESS',
       image_count: 2
     }, {
-      title: 'COLEUS: RAINBOW FOLIAGE FOR CONTAINERS AND GARDENS',
+      title: 'COLEUS',
       slug: 'Coleus',
       text: ['Guide to designing with and caring for coleus, including an encyclopedia of 225 varieties'],
       publisher: 'TIMBER PRESS',
@@ -174,31 +174,31 @@
     }, {
       title: 'GROWING THE MIDWEST GARDEN',
       slug: 'GrowingMidwestGarden',
-      text: ['Encyclopedic guide to plants specifically suited to the heartland'],
+      text: ['Encyclopedic guide to plants specifically<br>suited to the heartland'],
       publisher: 'TIMBER PRESS',
       image_count: 2
     }, {
       title: 'THE GUIDE TO WEST COAST CHEESE',
       slug: 'WestCoastCheese',
-      text: ['Reference for selecting, identifying, and savoring<br>the cheeses of California, Oregon, and Washington'],
+      text: ['Reference for selecting, identifying,<br>and savoring<br>the cheeses of California,<br>Oregon, and Washington'],
       publisher: 'TIMBER PRESS',
       image_count: 2
     }, {
       title: 'URBAN PANTRY',
       slug: 'UrbanPantry',
       text: ['Guide to making better use of kitchen, garden and time for the modern audience'],
-      publisher: 'SKIPSTONE PRESS',
+      publisher: 'SKIPSTONE',
       image_count: 2
     }, {
       title: 'EDIBLE HEIRLOOMS',
       slug: 'EdibleHeirlooms',
-      text: ['Guide to growing heritage vegetables for the maritime garden'],
+      text: ['Guide to growing heritage vegetables<br>for the maritime garden'],
       publisher: 'MOUNTAINEERS BOOKS',
       image_count: 2
     }, {
       title: 'NORTHWEST FORAGING',
       slug: 'NorthwestForaging',
-      text: ['Update of a classic guide to identifying and harvesting wild edible plants'],
+      text: ['Update of a classic guide to identifying<br>and harvesting wild edible plants'],
       publisher: 'MOUNTAINEERS BOOKS',
       image_count: 2
     }, {
@@ -210,19 +210,19 @@
     }, {
       title: 'FEARLESS COLOR GARDENS',
       slug: 'FearlessColorGardens',
-      text: ['How to use wild, uninhibited color to turn a garden into a work of art'],
+      text: ['How to use wild, uninhibited color<br>to turn a garden into a work of art'],
       publisher: 'TIMBER PRESS',
       image_count: 2
     }, {
       title: "THE RANCHO GORDO HEIRLOOM BEAN GROWER'S GUIDE",
       slug: 'HeirloomBeans',
-      text: ['Book profiling the fifty best beans to grow, cook, and save'],
+      text: ['Profiles of the fifty best beans to grow,<br>cook, and save'],
       publisher: 'TIMBER PRESS',
       image_count: 2
     }, {
       title: 'PROMISCUOUS PLANTS',
       slug: 'PromiscuousPlants',
-      text: ['Guide to plants that spread, self-sow, and overwinter'],
+      text: ['Guide to plants that spread, self-sow,<br>and overwinter'],
       publisher: 'TIMBER PRESS',
       image_count: 2
     }, {
@@ -235,54 +235,54 @@
       title: 'BACKYARD ROOTS',
       slug: 'BackyardRoots',
       text: ['An inspiring book featuring 35 urban farmers from Northern California, Oregon, Washington and British Columbia'],
-      publisher: 'SKIPSTONE PRESS',
+      publisher: 'SKIPSTONE',
       image_count: 2
     }, {
       title: 'FROM TREE TO TABLE',
       slug: 'FromTreeToTable',
-      text: ['Guide to growing backyard fruit trees in the Pacific maritime climate'],
+      text: ['Guide to growing backyard fruit trees<br>in the Pacific maritime climate'],
       publisher: 'MOUNTAINEERS BOOKS',
       image_count: 2
     }, {
       title: 'PACIFIC FEAST',
       slug: 'PacificFeast',
-      text: ['Book highlighting the sustainable native bounty of the West Coast'],
-      publisher: 'SKIPSTONE PRESS',
+      text: ['Book highlighting the sustainable native bounty<br>of the West Coast'],
+      publisher: 'SKIPSTONE',
       image_count: 2
     }, {
       title: 'BEAR COUNTRY',
       slug: 'BearCountry',
       text: ['Gift book featuring 125 full-color photographs of bears'],
-      publisher: 'UNLEASHED BOOK DEVELOPMENT',
+      publisher: 'MOUNTAINEERS BOOKS',
       image_count: 2
     }, {
       title: 'EXPECTANT NUDE',
       slug: 'ExpectantNude',
       text: ['Collection of photography of pregnant women<br>(in development)'],
-      publisher: 'MOUNTAINEERS BOOKS',
+      publisher: 'UNLEASHED BOOK DEVELOPMENT',
       image_count: 2
     }, {
       title: 'NO BETTER TIME',
       slug: 'NoBetterTime',
-      text: ['A guide to international aid and development to help readers make decisions about donating, volunteering, and advocacy'],
+      text: ['A guide to international aid and development to help readers make decisions about donating, volunteering, and advocacy', '(in development)'],
       publisher: 'TRIBUTARY BOOKS',
       image_count: 2
     }, {
       title: 'DIALOGUE WITH A DOCTOR',
       slug: 'DialogueDoctor',
-      text: ['Q & A in lay person’s terms about cold and flu<br>(in development)'],
+      text: ['Q & A in layperson’s terms about cold and flu<br>(in development)'],
       publisher: 'TRIBUTARY BOOKS',
-      image_count: 1
+      image_count: 2
     }, {
-      title: 'THE NORTHWEST GREEN HOME PRIMER',
+      title: 'GREEN HOME PRIMER',
       slug: 'GreenHomePrimer',
-      text: ['Ideas for building, remodeling and buying green'],
+      text: ['Ideas for building, remodeling, and buying green'],
       publisher: 'TIMBER PRESS',
       image_count: 2
     }, {
       title: 'THE ART OF ROUGH TRAVEL',
       slug: 'ArtOfRoughTravel',
-      text: ['Abridged edition of a classic handbook for explorers'],
+      text: ['Abridged edition of a classic handbook<br>for explorers'],
       publisher: 'MOUNTAINEERS BOOKS',
       image_count: 2
     }, {
@@ -300,13 +300,13 @@
     }, {
       title: 'GETTING WILD',
       slug: 'GettingWild',
-      text: ['Booklet packaged with high tech glue gun describing its many possible uses'],
+      text: ['Booklet packaged with high-tech glue gun describing its many possible uses'],
       publisher: 'COLD HEAT',
       image_count: 2
     }, {
       title: 'THE ARTISANS OF WHIDBEY ISLAND',
       slug: 'ArtisansWhidbey',
-      text: ['Collection of biographies and work by artists in the Puget Sound region<br>(in development)'],
+      text: ['Collection of biographies and work by artists<br>in the Puget Sound region (in development)'],
       publisher: '',
       image_count: 2
     }, {
@@ -324,19 +324,13 @@
     }, {
       title: 'SHOWERED WITH LOVE',
       slug: 'ShoweredLove',
-      text: ['Unique and eclectic book about making baby shower gifts<br>(in development)'],
+      text: ['Unique and eclectic book about making baby shower gifts (in development)'],
       publisher: 'UNLEASHED BOOK DEVELOPMENT',
       image_count: 2
     }, {
-      title: 'LIFE AFTER 60?',
-      slug: 'LifeAfter60',
-      text: ['Self-help book on enjoying life after age 60'],
-      publisher: 'IUNIVERSE',
-      image_count: 1
-    }, {
       title: 'TAJ',
       slug: 'Taj',
-      text: ['Fictional love story from fifteenth century India'],
+      text: ['Fictional love story from fifteenth-century India'],
       publisher: 'AMUNDSON DAVIS PUBLISHING',
       image_count: 1
     }
