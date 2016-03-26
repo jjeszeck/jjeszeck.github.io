@@ -35,7 +35,7 @@ app.layouts = [
   ,
     title: 'TRAVELS TO THE EDGE'
     slug: 'TravelsToTheEdge'
-    text: [ 'Awe-inspiring places, cultures and creatures, captured by Art Wolfe, acclaimed photographer and companion piece to 13-episode public television series' ]
+    text: [ 'Awe-inspiring places, cultures, and creatures, captured by Art Wolfe, acclaimed photographer and companion piece to 13-episode public television series' ]
     publisher: 'MOUNTAINEERS BOOKS'
     image_count: 2
   ,
@@ -191,7 +191,7 @@ app.layouts = [
   ,
     title: 'URBAN PANTRY'
     slug: 'UrbanPantry'
-    text: ['Guide to making better use of kitchen, garden and time for the modern audience']
+    text: ['Guide to making better use of kitchen, garden, and time for the modern audience']
     publisher: 'SKIPSTONE PRESS'
     image_count: 2
   ,
@@ -239,7 +239,7 @@ app.layouts = [
   ,
     title: 'BACKYARD ROOTS'
     slug: 'BackyardRoots'
-    text: ['An inspiring book featuring 35 urban farmers from Northern California, Oregon, Washington and British Columbia']
+    text: ['An inspiring book featuring 35 urban farmers from Northern California, Oregon, Washington, and British Columbia']
     publisher: 'SKIPSTONE PRESS'
     image_count: 2
   ,
@@ -281,7 +281,7 @@ app.layouts = [
   ,
     title: 'THE NORTHWEST GREEN HOME PRIMER'
     slug: 'GreenHomePrimer'
-    text: ['Ideas for building, remodeling and buying green']
+    text: ['Ideas for building, remodeling, and buying green']
     publisher: 'TIMBER PRESS'
     image_count: 2
   ,

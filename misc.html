@@ -13,6 +13,13 @@
     var layouts = new Array();
     layouts[0]=
     {
+    name:"Vitality",
+    leftIllo1:"280px",
+    topIllo1:"60px",
+    widthIllo1:"200px", heightIllo1:"300px", srcIllo1:"./images/misc/16_GroupHealth-Newsletter.jpg"
+    }
+    layouts[1]=
+    {
     name:"engineering",
     leftIllo1:"280px",
     topIllo1:"60px",
@@ -21,7 +28,7 @@
     topIllo2:"60px",
     widthIllo2:"200px", heightIllo2:"259px", srcIllo2:"./images/misc/00_engineering2.jpg"
     }
-    layouts[1]=
+    layouts[2]=
     {
     name:"mtu-newsletter",
     leftIllo1:"280px",
@@ -31,7 +38,7 @@
     topIllo2:"60px",
     widthIllo2:"200px", heightIllo2:"259px", srcIllo2:"./images/misc/01_MTU-Newsletter-2.jpg"
     }
-    layouts[2]=
+    layouts[3]=
     {
     name:"mtu-cover",
     leftIllo1:"280px",
@@ -41,7 +48,7 @@
     topIllo2:"60px",
     widthIllo2:"200px", heightIllo2:"259px", srcIllo2:"./images/misc/02_MTU-Cover-2.jpg"
     }
-    layouts[3]=
+    layouts[4]=
     {
     name:"michiganTech",
     leftIllo1:"280px",
@@ -51,7 +58,7 @@
     topIllo2:"60px",
     widthIllo2:"200px", heightIllo2:"259px", srcIllo2:"./images/misc/03_michiganTech2.jpg"
     }
-    layouts[4]=
+    layouts[5]=
     {
     name:"pei",
     leftIllo1:"280px",
@@ -61,14 +68,14 @@
     topIllo2:"80px",
     widthIllo2:"350px", heightIllo2:"150px", srcIllo2:"./images/misc/04_pei2.jpg"
     }
-    layouts[5]=
+    layouts[6]=
     {
     name:"cte",
     leftIllo1:"280px",
     topIllo1:"60px",
     widthIllo1:"218px", heightIllo1:"282px", srcIllo1:"./images/misc/05_cte1.jpg"
     }
-    layouts[6]=
+    layouts[7]=
     {
     name:"parksAlive",
     leftIllo1:"280px",
@@ -78,14 +85,14 @@
     topIllo2:"60px",
     widthIllo2:"200px", heightIllo2:"259px", srcIllo2:"./images/misc/06_parksAlive2.jpg"
     }
-    layouts[7]=
+    layouts[8]=
     {
     name:"surLaTable",
     leftIllo1:"280px",
     topIllo1:"60px",
     widthIllo1:"209px", heightIllo1:"259px", srcIllo1:"./images/misc/07_surLaTable1.jpg"
     }
-    layouts[8]=
+    layouts[9]=
     {
     name:"pennaco",
     leftIllo1:"280px",
@@ -95,14 +102,14 @@
     topIllo2:"60px",
     widthIllo2:"200px", heightIllo2:"259px", srcIllo2:"./images/misc/08_pennaco2.jpg"
     }
-    layouts[9]=
+    layouts[10]=
     {
     name:"turnstone",
     leftIllo1:"280px",
     topIllo1:"60px",
     widthIllo1:"206px", heightIllo1:"266px", srcIllo1:"./images/misc/09_turnstone1.jpg"
     }
-    layouts[10]=
+    layouts[11]=
     {
     name:"coyote",
     leftIllo1:"280px",
@@ -115,7 +122,7 @@
     topIllo3:"180px",
     widthIllo3:"233px", heightIllo3:"180px", srcIllo3:"./images/misc/10_coyote3.jpg"
     }
-    layouts[11]=
+    layouts[12]=
     {
     name:"jaywalk",
     leftIllo1:"280px",
@@ -128,7 +135,7 @@
     topIllo3:"60px",
     widthIllo3:"108px", heightIllo3:"188px", srcIllo3:"./images/misc/11_jaywalk3.jpg"
     }
-    layouts[12]=
+    layouts[13]=
     {
     name:"honeyLabel",
     leftIllo1:"280px",
@@ -138,14 +145,14 @@
     topIllo2:"240px",
     widthIllo2:"196px", heightIllo2:"142px", srcIllo2:"./images/misc/12_honeyLabel2.jpg"
     }
-    layouts[13]=
+    layouts[14]=
     {
     name:"ctePoster",
     leftIllo1:"280px",
     topIllo1:"30px",
     widthIllo1:"151px", heightIllo1:"350px", srcIllo1:"./images/misc/13_ctePoster1.jpg"
     }
-    layouts[14]=
+    layouts[15]=
     {
     name:"postcard",
     leftIllo1:"280px",
@@ -155,23 +162,7 @@
     topIllo2:"60px",
     widthIllo2:"162px", heightIllo2:"225px", srcIllo2:"./images/misc/14_postcard2.jpg"
     }
-    layouts[15]=
-    {
-    name:"honeyImHome",
-    leftIllo1:"280px",
-    topIllo1:"60px",
-    widthIllo1:"248px", heightIllo1:"248px", srcIllo1:"./images/misc/15_honeyImHome1.jpg",
-    leftIllo2:"520px",
-    topIllo2:"60px",
-    widthIllo2:"292px", heightIllo2:"270px", srcIllo2:"./images/misc/15_honeyImHome2.jpg"
-    }
-    layouts[16]=
-    {
-    name:"Vitality",
-    leftIllo1:"280px",
-    topIllo1:"60px",
-    widthIllo1:"200px", heightIllo1:"300px", srcIllo1:"./images/misc/16_GroupHealth-Newsletter.jpg"
-    }
+
     var layoutsLoaded = "true";
     //--------------------------------------------------------
     //END SCRIPT
@@ -198,29 +189,29 @@
         <a href="javascript:void (0)" onmousedown="app.cycleIllos(&#39;forward&#39;)" onmouseup="this.blur()">next</a></p>
       </div>
     </div>
-    <img src="./images/misc/00_engineering1.jpg" id="illo1" onclick="app.displayImage(this.src)" style="position: absolute; left: 280px; top: 60px; width: 200px; height: 259px; border-width: 0px; z-index: 2; display: block;">
-    <img src="./images/misc/00_engineering2.jpg" id="illo2" onclick="app.displayImage(this.src)" style="position: absolute; left: 520px; top: 60px; width: 200px; height: 259px; border-width: 0px; z-index: 1; display: block;">
+    <img src="./images/misc/16_GroupHealth-Newsletter.jpg" id="illo1" onclick="app.displayImage(this.src)" style="position: absolute; left: 280px; top: 60px; width: 200px; height: 259px; border-width: 0px; z-index: 2; display: block;">
+    <img src="" id="illo2" onclick="app.displayImage(this.src)" style="position: absolute; left: 520px; top: 60px; width: 200px; height: 259px; border-width: 0px; z-index: 1; display: none;">
     <img src="" id="illo3" onclick="app.displayImage(this.src)" style="position: absolute; left: 520px; top: 60px; width: 200px; height: 259px; border-width: 0px; z-index: 1; display: none;">
     
     <!-- --------------------------------------------------------- -->
     <!--CAPTIONS-->
-    <div id="engineering" class="caption" style="position: absolute; left: 520px; top: 330px; width: 220px; z-index: 3; display: block;"><p>Quarterly newsletter for the<br> College of Engineering </p><p>MICHIGAN TECH UNIVERSITY</p></div>
+    <div id="Vitality" class="caption" style="position:absolute; left:510px; top:270px; width:325px; z-index:3; display:block"><p>Quarterly newsletter for senior members<br>of a health maintenance organization in Seattle</p><p>GROUP HEALTH COOPERATIVE</p></div>
+    <div id="engineering" class="caption" style="position: absolute; left: 520px; top: 330px; width: 220px; z-index: 3; display: none;"><p>Quarterly newsletter for the<br> College of Engineering </p><p>MICHIGAN TECH UNIVERSITY</p></div>
     <div id="mtu-newsletter" class="caption" style="position: absolute; left: 520px; top: 330px; width: 220px; z-index: 3; display: none;"><p>Newsletter for the <br>Geological Engineering Department </p><p>MICHIGAN TECH UNIVERSITY</p></div>
     <div id="mtu-cover" class="caption" style="position: absolute; left: 520px; top: 330px; width: 220px; z-index: 3; display: none;"><p>Brochures for prospective students to the<br> College of Engineering </p><p>MICHIGAN TECH UNIVERSITY</p></div>
     <div id="michiganTech" class="caption" style="position: absolute; left: 520px; top: 330px; width: 220px; z-index: 3; display: none;"><p>Marketing material for several<br> engineering departments </p><p>MICHIGAN TECH UNIVERSITY</p></div>
-    <div id="pei" class="caption" style="position:absolute; left:495px; top:275px; width:220px; z-index:3; display:none"><p>Program booklet for undergraduate,  graduate and donor information </p><p>UNIVERSITY OF WASHINGTON</p></div>
+    <div id="pei" class="caption" style="position:absolute; left:495px; top:275px; width:220px; z-index:3; display:none"><p>Program booklet for undergraduate, graduate,<br> and donor information</p><p>UNIVERSITY OF WASHINGTON</p></div>
     <div id="cte" class="caption" style="position:absolute; left:515px; top:295px; width:200px; z-index:3; display:none"><p>Program information for the Center for Technology Entrepreneurship </p><p>UNIVERSITY OF WASHINGTON</p></div>
-    <div id="parksAlive" class="caption" style="position:absolute; left:510px; top:325px; width:230px; z-index:3; display:none"><p>Quarterly newsletter about educational outreach in Washington State’s national parks </p><p>WASHINGTON’S NATIONAL PARK FUND</p></div>
+    <div id="parksAlive" class="caption" style="position:absolute; left:510px; top:325px; width:230px; z-index:3; display:none"><p>Quarterly newsletter about educational outreach<br>in Washington State’s national parks </p><p>WASHINGTON’S NATIONAL PARK FUND</p></div>
     <div id="surLaTable" class="caption" style="position:absolute; left:510px; top:265px; width:220px; z-index:3; display:none"><p>Brochure listing culinary classes offered<br> by gourmet retailer </p><p>SUR LA TABLE</p></div>
-    <div id="pennaco" class="caption" style="position:absolute; left:510px; top:325px; width:220px; z-index:3; display:none"><p>Annual reports for an oil and gas exploration company in the West </p><p>PENNACO ENERGY</p></div>
+    <div id="pennaco" class="caption" style="position:absolute; left:510px; top:325px; width:220px; z-index:3; display:none"><p>Annual reports for an oil and gas<br>exploration company in the West </p><p>PENNACO ENERGY</p></div>
     <div id="turnstone" class="caption" style="position:absolute; left:510px; top:270px; width:200px; z-index:3; display:none"><p>Cover for a set of marketing materials<br> for a construction company </p><p>TURNSTONE CONSTRUCTION INC.</p></div>
-    <div id="coyote" class="caption" style="position:absolute; left:280px; top:315px; width:200px; z-index:3; display:none"><p>Brochure describing programs which connect students and professionals in mentoring situations </p><p>COYOTE CENTRAL</p></div>
-    <div id="jaywalk" class="caption" style="position:absolute; left:435px; top:290px; width:200px; z-index:3; display:none"><p>Hangtag, signage and cards for<br> an eclectic gift shop </p><p>JAYWALK</p></div>
+    <div id="coyote" class="caption" style="position:absolute; left:280px; top:315px; width:200px; z-index:3; display:none"><p>Brochure describing programs<br>which connect students and professionals<br>in mentoring situations </p><p>COYOTE CENTRAL</p></div>
+    <div id="jaywalk" class="caption" style="position:absolute; left:435px; top:290px; width:200px; z-index:3; display:none"><p>Hangtag, signage, and cards<br>for an eclectic gift shop </p><p>JAYWALK</p></div>
     <div id="honeyLabel" class="caption" style="position:absolute; left:655px; top:165px; width:200px; z-index:3; display:none"><p>Labels for a honeymaking women’s cooperative in Zimbabwe</p></div>
     <div id="ctePoster" class="caption" style="position:absolute; left:450px; top:280px; width:200px; z-index:3; display:none"><p>Poster announcing<br> annual business competition </p><p>UNIVERSITY OF WASHINGTON</p></div>
-    <div id="postcard" class="caption" style="position:absolute; left:640px; top:220px; width:200px; z-index:3; display:none"><p>Series of note cards using<br> early 20th century lantern slides taken<br> by Asahel Curtis </p><p>WASHINGTON’S NATIONAL PARK FUND</p></div>
-    <div id="honeyImHome" class="caption" style="position:absolute; left:480px; top:300px; width:200px; z-index:3; display:none"><p>Logo and labeling for a catering company providing take-out meals  </p><p>HONEY! I’M HOME!</p></div>
-    <div id="Vitality" class="caption" style="position:absolute; left:510px; top:270px; width:325px; z-index:3; display:none"><p>Quarterly newsletter for senior members<br>of a health maintenance organization in Seattle</p><p>GROUP HEALTH COOPERATIVE</p></div>
+    <div id="postcard" class="caption" style="position:absolute; left:640px; top:220px; width:200px; z-index:3; display:none"><p>Series of notecards using<br> early 20th-century lantern slides<br>taken by Asahel Curtis </p><p>WASHINGTON’S NATIONAL PARK FUND</p></div>
+<!--     <div id="honeyImHome" class="caption" style="position:absolute; left:480px; top:300px; width:200px; z-index:3; display:none"><p>Logo and labeling for a catering company providing take-out meals  </p><p>HONEY! I’M HOME!</p></div> -->
     <!-- CAPTIONS-->
     <!-- --------------------------------------------------------- -->
     <!-- contentPanel end div -->
